@@ -9,6 +9,8 @@
 
     ./push test|prod
 
+Note: this website source is derived from a base template of Protos, LLC, and is licensed for use for Cognitive.
+
 ## TODO:
 
   * Automate the push to be run via github CI
