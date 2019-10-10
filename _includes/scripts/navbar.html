@@ -1,0 +1,32 @@
+<script language="Javascript">
+  let hideNavAt = -1
+  const hideWait = 5000
+  function unhideNav() {
+    $('#navbar-top').removeClass('navbar-hide')
+    hideAt = (Date.now() + hideWait) - 500 // half a second slush
+    setTimeout(function() {
+      if (hideAt <= Date.now() && !$('#navbar-top').hasClass('navbar-hide')) {
+        hideNav()
+      }
+    }, hideWait)
+  }
+  function hideNav() {
+    $('#navbar-top').addClass('navbar-hide')
+  }
+  $(window).scroll(function(e) {
+    var scroll = $(window).scrollTop()
+    if (scroll >= 150) {
+      hideNav()
+    } else {
+      unhideNav()
+    }
+  })
+  $(window).focus(unhideNav)
+  $('#navbar-top').hover(unhideNav)
+  $(document).ready(function() {
+    unhideNav()
+    $('.navbar-collapse ul li a').click(function() {
+        $('.navbar-toggle:visible').click();
+    });
+  })
+</script>

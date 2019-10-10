@@ -1,0 +1,758 @@
+---
+layout: default
+---
+
+<div class="row m-5 mt-8 ms-5">
+<div class="col">
+<h1>Theme Palettes</h1>
+(An excellent explanation on <a href="https://refactoringui.com/previews/building-your-color-palette/">Color Palettes in a GUI</a>)
+<style type="text/css">@import url("/css/palette.css");</style>
+<style type="text/css">
+.c-primary {}
+.c-primary-inv {}
+.c-accent {}
+.c-accent-inv {}
+.c-neutral {}
+.c-neutral-inv {}
+.c-info {}
+.c-info-inv {}
+.c-success {}
+.c-success-inv {}
+.c-danger {}
+.c-danger-inv {}
+.c-warning {}
+.c-warning-inv {}
+.swatch-outer { margin: 0; padding: 0; border: none; }
+.hex { color: gray; font-size: 8pt; }
+.but1 { border-radius: .25rem; width: 100px; text-align: center; }
+.but2 { border-radius: .25rem; border: solid 2px black; width: 100px; text-align: center; }
+.theme { width: 75px; margin-right: .5rem; text-align: center; }
+.value { width: 75px; text-align: left; align-items: center; justify-content: center; }
+</style>
+
+<div id="my-inputs">
+[this will populate with links on load]
+</div>
+
+<div class="row mt-sm-3">
+  <div class="swatch-outer spectrum-primary">
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="800" data-for="x900" data-do=lighten>&nbsp;</div>
+      <div class="hex value" id="x900">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="600" data-for="x800" data-do=lighten>&nbsp;</div>
+      <div class="hex value" id="x800">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="400" data-for="x700" data-do=lighten>&nbsp;</div>
+      <div class="hex value" id="x700">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="200" data-for="x600" data-do=lighten>&nbsp;</div>
+      <div class="hex value" id="x600">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme c-primary-inv" data-do="nothing">primary</div>
+      <div class="hex value" id="x500">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="200" data-for="x400" data-do=darken>&nbsp;</div>
+      <div class="hex value" id="x400">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="400" data-for="x300" data-do=darken>&nbsp;</div>
+      <div class="hex value" id="x300">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="600" data-for="x200" data-do=darken>&nbsp;</div>
+      <div class="hex value" id="x200">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="800" data-for="x100" data-do=darken>&nbsp;</div>
+      <div class="hex value" id="x100">initial</div>
+    </div>
+  </div>
+  <div class="swatch-outer spectrum-accent">
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="800" data-for="x900" data-do=lighten>&nbsp;</div>
+      <div class="hex value" id="x900">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="600" data-for="x800" data-do=lighten>&nbsp;</div>
+      <div class="hex value" id="x800">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="400" data-for="x700" data-do=lighten>&nbsp;</div>
+      <div class="hex value" id="x700">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="200" data-for="x600" data-do=lighten>&nbsp;</div>
+      <div class="hex value" id="x600">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme c-accent-inv" data-do="nothing">accent</div>
+      <div class="hex value" id="x500">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="200" data-for="x400" data-do=darken>&nbsp;</div>
+      <div class="hex value" id="x400">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="400" data-for="x300" data-do=darken>&nbsp;</div>
+      <div class="hex value" id="x300">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="600" data-for="x200" data-do=darken>&nbsp;</div>
+      <div class="hex value" id="x200">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="800" data-for="x100" data-do=darken>&nbsp;</div>
+      <div class="hex value" id="x100">initial</div>
+    </div>
+  </div>
+  <div class="swatch-outer spectrum-info">
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="800" data-for="x900" data-do=lighten>&nbsp;</div>
+      <div class="hex value" id="x900">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="600" data-for="x800" data-do=lighten>&nbsp;</div>
+      <div class="hex value" id="x800">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="400" data-for="x700" data-do=lighten>&nbsp;</div>
+      <div class="hex value" id="x700">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="200" data-for="x600" data-do=lighten>&nbsp;</div>
+      <div class="hex value" id="x600">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme c-info-inv" data-do="nothing">info</div>
+      <div class="hex value" id="x500">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="200" data-for="x400" data-do=darken>&nbsp;</div>
+      <div class="hex value" id="x400">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="400" data-for="x300" data-do=darken>&nbsp;</div>
+      <div class="hex value" id="x300">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="600" data-for="x200" data-do=darken>&nbsp;</div>
+      <div class="hex value" id="x200">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="800" data-for="x100" data-do=darken>&nbsp;</div>
+      <div class="hex value" id="x100">initial</div>
+    </div>
+  </div>
+  <div class="swatch-outer spectrum-success">
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="800" data-for="x900" data-do=lighten>&nbsp;</div>
+      <div class="hex value" id="x900">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="600" data-for="x800" data-do=lighten>&nbsp;</div>
+      <div class="hex value" id="x800">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="400" data-for="x700" data-do=lighten>&nbsp;</div>
+      <div class="hex value" id="x700">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="200" data-for="x600" data-do=lighten>&nbsp;</div>
+      <div class="hex value" id="x600">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme c-success-inv" data-do="nothing">success</div>
+      <div class="hex value" id="x500">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="200" data-for="x400" data-do=darken>&nbsp;</div>
+      <div class="hex value" id="x400">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="400" data-for="x300" data-do=darken>&nbsp;</div>
+      <div class="hex value" id="x300">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="600" data-for="x200" data-do=darken>&nbsp;</div>
+      <div class="hex value" id="x200">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="800" data-for="x100" data-do=darken>&nbsp;</div>
+      <div class="hex value" id="x100">initial</div>
+    </div>
+  </div>
+  <div class="swatch-outer spectrum-danger">
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="800" data-for="x900" data-do=lighten>&nbsp;</div>
+      <div class="hex value" id="x900">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="600" data-for="x800" data-do=lighten>&nbsp;</div>
+      <div class="hex value" id="x800">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="400" data-for="x700" data-do=lighten>&nbsp;</div>
+      <div class="hex value" id="x700">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="200" data-for="x600" data-do=lighten>&nbsp;</div>
+      <div class="hex value" id="x600">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme c-danger-inv" data-do="nothing">danger</div>
+      <div class="hex value" id="x500">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="200" data-for="x400" data-do=darken>&nbsp;</div>
+      <div class="hex value" id="x400">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="400" data-for="x300" data-do=darken>&nbsp;</div>
+      <div class="hex value" id="x300">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="600" data-for="x200" data-do=darken>&nbsp;</div>
+      <div class="hex value" id="x200">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="800" data-for="x100" data-do=darken>&nbsp;</div>
+      <div class="hex value" id="x100">initial</div>
+    </div>
+  </div>
+  <div class="swatch-outer spectrum-warning">
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="800" data-for="x900" data-do=lighten>&nbsp;</div>
+      <div class="hex value" id="x900">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="600" data-for="x800" data-do=lighten>&nbsp;</div>
+      <div class="hex value" id="x800">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="400" data-for="x700" data-do=lighten>&nbsp;</div>
+      <div class="hex value" id="x700">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="200" data-for="x600" data-do=lighten>&nbsp;</div>
+      <div class="hex value" id="x600">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme c-warning-inv" data-do="nothing">warning</div>
+      <div class="hex value" id="x500">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="200" data-for="x400" data-do=darken>&nbsp;</div>
+      <div class="hex value" id="x400">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="400" data-for="x300" data-do=darken>&nbsp;</div>
+      <div class="hex value" id="x300">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="600" data-for="x200" data-do=darken>&nbsp;</div>
+      <div class="hex value" id="x200">initial</div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="theme" data-x="800" data-for="x100" data-do=darken>&nbsp;</div>
+      <div class="hex value" id="x100">initial</div>
+    </div>
+  </div>
+ </div>
+
+<div>
+<h1 class="c-primary">Heading</h1>
+Lorem <a href="" class="c-primary">ipsum dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+<a href="" class="c-primary">labore et dolore magna aliqua</a>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+<p>
+<div class="d-flex flex-row">
+  <div class="but1 m-1 p-2 br-2 c-primary-inv">Primary</div>
+  <div class="but1 m-1 p-2 br-2 c-accent-inv">Accent</div>
+  <div class="but1 m-1 p-2 br-2 c-info-inv">Info</div>
+  <div class="but1 m-1 p-2 br-2 c-success-inv">Success</div>
+  <div class="but1 m-1 p-2 br-2 c-danger-inv">Danger</div>
+  <div class="but1 m-1 p-2 br-2 c-warning-inv">Warning</div>
+</div>
+<p>
+<div class="d-flex">
+  <div class="but2 m-1 p-2 br-2 b--c-primary">Primary</div>
+  <div class="but2 m-1 p-2 br-2 b--c-accent">Accent</div>
+  <div class="but2 m-1 p-2 br-2 b--c-info">Info</div>
+  <div class="but2 m-1 p-2 br-2 b--c-success">Success</div>
+  <div class="but2 m-1 p-2 br-2 b--c-danger">Danger</div>
+  <div class="but2 m-1 p-2 br-2 b--c-warning">Warning</div>
+</div>
+</div>
+
+<div class="mt-4" style="border: solid 2px gray;">
+  <a href="javascript:showScss()" class="pl-2">Show SCSS</a>
+  <div id="show-scss" class="p-2" style="border-top: solid 2px gray; background-color: #efefef;">
+
+  </div>
+</div>
+
+<h1>Color Spanner</h1>
+<script src="//code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script>
+// color adjuster
+const pSBC=(p,c0,c1,l)=>{
+    let r,g,b,P,f,t,h,i=parseInt,m=Math.round,a=typeof(c1)=="string";
+    if(typeof(p)!="number"||p<-1||p>1||typeof(c0)!="string"||(c0[0]!='r'&&c0[0]!='#')||(c1&&!a))return null;
+    if(!this.pSBCr)this.pSBCr=(d)=>{
+        let n=d.length,x={};
+        if(n>9){
+            [r,g,b,a]=d=d.split(","),n=d.length;
+            if(n<3||n>4)return null;
+            x.r=i(r[3]=="a"?r.slice(5):r.slice(4)),x.g=i(g),x.b=i(b),x.a=a?parseFloat(a):-1
+        }else{
+            if(n==8||n==6||n<4)return null;
+            if(n<6)d="#"+d[1]+d[1]+d[2]+d[2]+d[3]+d[3]+(n>4?d[4]+d[4]:"");
+            d=i(d.slice(1),16);
+            if(n==9||n==5)x.r=d>>24&255,x.g=d>>16&255,x.b=d>>8&255,x.a=m((d&255)/0.255)/1000;
+            else x.r=d>>16,x.g=d>>8&255,x.b=d&255,x.a=-1
+        }return x};
+    h=c0.length>9,h=a?c1.length>9?true:c1=="c"?!h:false:h,f=pSBCr(c0),P=p<0,t=c1&&c1!="c"?pSBCr(c1):P?{r:0,g:0,b:0,a:-1}:{r:255,g:255,b:255,a:-1},p=P?p*-1:p,P=1-p;
+    if(!f||!t)return null;
+    if(l)r=m(P*f.r+p*t.r),g=m(P*f.g+p*t.g),b=m(P*f.b+p*t.b);
+    else r=m((P*f.r**2+p*t.r**2)**0.5),g=m((P*f.g**2+p*t.g**2)**0.5),b=m((P*f.b**2+p*t.b**2)**0.5);
+    a=f.a,t=t.a,f=a>=0||t>=0,a=f?a<0?t:t<0?a:a*P+t*p:0;
+    if(h)return"rgb"+(f?"a(":"(")+r+","+g+","+b+(f?","+m(a*1000)/1000:"")+")";
+    else return"#"+(4294967296+r*16777216+g*65536+b*256+(f?m(a*255):0)).toString(16).slice(1,f?undefined:-2)
+}
+percs = {
+  "900": 1,
+  "800": .88888888,
+  "700": .77777777,
+  "600": .66666666,
+  "500": .55555555,
+  "400": .44444444,
+  "300": .33333333,
+  "200": .22222222,
+  "100": .11111111
+}
+function print(obj) {
+  console.log(obj)
+}
+function cleancolor(str) {
+  if (str[0] != '#' && str.substring(0, 4) != 'rgb(') {
+    return '#' + str
+  }
+  return str
+}
+function adjust(label) {
+  var colors = $('form.color.' + label).serializeArray().reduce(function(obj, item) {
+    obj[item.name] = item.value;
+    return obj;
+  }, {});
+  colors.color1 = cleancolor(colors.color1)
+  colors.color2 = cleancolor(colors.color2)
+  $('.swatch.' + label).each((obj, item) => {
+    offset = item.dataset['x']
+    switch (item.dataset['do']) {
+      case 'darken':
+        color = pSBC(- percs[offset], colors.color1)
+        break
+      case 'lighten':
+        color = pSBC(percs[offset], colors.color2)
+        break
+      default:
+        color = pSBC(percs[offset], colors.color2, colors.color1)
+        break
+    }
+    item.style.backgroundColor = color
+    $('#' + item.dataset['for']).text(color)
+  })
+  return false
+}
+</script>
+<form class="color spanner" action="">
+  Color1: <input type="text" name="color1" class="color spanner color1" value="#000" onchange="adjust('spanner')">
+  Color2: <input type="text" name="color2" class="color spanner color2" value="#fff" onchange="adjust('spanner')">
+</form>
+
+<div class="row mt-sm-3">
+  <div class="col swatch-outer">darken 900:
+    <div>
+      <div class="swatch spanner" data-x="900" data-for="d900" data-do=darken>&nbsp;</div>
+      <div class="hex spanner" id="d900">&nbsp;</div>
+    </div>
+  </div>
+  <div class="col swatch-outer">darken 800:
+    <div>
+      <div class="swatch spanner" data-x="800" data-for="d800" data-do=darken>&nbsp;</div>
+      <div class="hex spanner" id="d800">&nbsp;</div>
+    </div>
+  </div>
+  <div class="col swatch-outer">darken 700:
+    <div>
+      <div class="swatch spanner" data-x="700" data-for="d700" data-do=darken>&nbsp;</div>
+      <div class="hex spanner" id="d700">&nbsp;</div>
+    </div>
+  </div>
+  <div class="col swatch-outer">darken 600:
+    <div>
+      <div class="swatch spanner" data-x="600" data-for="d600" data-do=darken>&nbsp;</div>
+      <div class="hex spanner" id="d600">&nbsp;</div>
+    </div>
+  </div>
+  <div class="col swatch-outer">darken 500:
+    <div>
+      <div class="swatch spanner" data-x="500" data-for="d500" data-do=darken>&nbsp;</div>
+      <div class="hex spanner" id="d500">&nbsp;</div>
+    </div>
+  </div>
+  <div class="col swatch-outer">darken 400:
+    <div>
+      <div class="swatch spanner" data-x="400" data-for="d400" data-do=darken>&nbsp;</div>
+      <div class="hex spanner" id="d400">&nbsp;</div>
+    </div>
+  </div>
+  <div class="col swatch-outer">darken 300:
+    <div>
+      <div class="swatch spanner" data-x="300" data-for="d300" data-do=darken>&nbsp;</div>
+      <div class="hex spanner" id="d300">&nbsp;</div>
+    </div>
+  </div>
+  <div class="col swatch-outer">darken 200:
+    <div>
+      <div class="swatch spanner" data-x="200" data-for="d200" data-do=darken>&nbsp;</div>
+      <div class="hex spanner" id="d200">&nbsp;</div>
+    </div>
+  </div>
+  <div class="col swatch-outer">darken 100:
+    <div>
+      <div class="swatch spanner" data-x="100" data-for="d100" data-do=darken>&nbsp;</div>
+      <div class="hex spanner" id="d100">&nbsp;</div>
+    </div>
+  </div>
+</div>
+
+<div class="row mt-sm-3">
+  <div class="col swatch-outer">900:
+    <div>
+      <div class="swatch spanner" data-x="900" data-for="p900">&nbsp;</div>
+      <div class="hex spanner" id="p900">&nbsp;</div>
+    </div>
+  </div>
+  <div class="col swatch-outer">800:
+    <div>
+      <div class="swatch spanner" data-x="800" data-for="p800">&nbsp;</div>
+      <div class="hex spanner" id="p800">&nbsp;</div>
+    </div>
+  </div>
+  <div class="col swatch-outer">700:
+    <div>
+      <div class="swatch spanner" data-x="700" data-for="p700">&nbsp;</div>
+      <div class="hex spanner" id="p700">&nbsp;</div>
+    </div>
+  </div>
+  <div class="col swatch-outer">600:
+    <div>
+      <div class="swatch spanner" data-x="600" data-for="p600">&nbsp;</div>
+      <div class="hex spanner" id="p600">&nbsp;</div>
+    </div>
+  </div>
+  <div class="col swatch-outer">500:
+    <div>
+      <div class="swatch spanner" data-x="500" data-for="p500">&nbsp;</div>
+      <div class="hex spanner" id="p500">&nbsp;</div>
+    </div>
+  </div>
+  <div class="col swatch-outer">400:
+    <div>
+      <div class="swatch spanner" data-x="400" data-for="p400">&nbsp;</div>
+      <div class="hex spanner" id="p400">&nbsp;</div>
+    </div>
+  </div>
+  <div class="col swatch-outer">300:
+    <div>
+      <div class="swatch spanner" data-x="300" data-for="p300">&nbsp;</div>
+      <div class="hex spanner" id="p300">&nbsp;</div>
+    </div>
+  </div>
+  <div class="col swatch-outer">200:
+    <div>
+      <div class="swatch spanner" data-x="200" data-for="p200">&nbsp;</div>
+      <div class="hex spanner" id="p200">&nbsp;</div>
+    </div>
+  </div>
+  <div class="col swatch-outer">100:
+    <div>
+      <div class="swatch spanner" data-x="100" data-for="p100">&nbsp;</div>
+      <div class="hex spanner" id="p100">&nbsp;</div>
+    </div>
+  </div>
+</div>
+
+<div class="row mt-sm-3">
+  <div class="col swatch-outer">lighten 100:
+    <div>
+      <div class="swatch spanner" data-x="100" data-for="l100" data-do=lighten>&nbsp;</div>
+      <div class="hex spanner" id="l100">&nbsp;</div>
+    </div>
+  </div>
+  <div class="col swatch-outer">lighten 200:
+    <div>
+      <div class="swatch spanner" data-x="200" data-for="l200" data-do=lighten>&nbsp;</div>
+      <div class="hex spanner" id="l200">&nbsp;</div>
+    </div>
+  </div>
+  <div class="col swatch-outer">lighten 300:
+    <div>
+      <div class="swatch spanner" data-x="300" data-for="l300" data-do=lighten>&nbsp;</div>
+      <div class="hex spanner" id="l300">&nbsp;</div>
+    </div>
+  </div>
+  <div class="col swatch-outer">lighten 400:
+    <div>
+      <div class="swatch spanner" data-x="400" data-for="l400" data-do=lighten>&nbsp;</div>
+      <div class="hex spanner" id="l400">&nbsp;</div>
+    </div>
+  </div>
+  <div class="col swatch-outer">lighten 500:
+    <div>
+      <div class="swatch spanner" data-x="500" data-for="l500" data-do=lighten>&nbsp;</div>
+      <div class="hex spanner" id="l500">&nbsp;</div>
+    </div>
+  </div>
+  <div class="col swatch-outer">lighten 600:
+    <div>
+      <div class="swatch spanner" data-x="600" data-for="l600" data-do=lighten>&nbsp;</div>
+      <div class="hex spanner" id="l600">&nbsp;</div>
+    </div>
+  </div>
+  <div class="col swatch-outer">lighten 700:
+    <div>
+      <div class="swatch spanner" data-x="700" data-for="l700" data-do=lighten>&nbsp;</div>
+      <div class="hex spanner" id="l700">&nbsp;</div>
+    </div>
+  </div>
+  <div class="col swatch-outer">lighten 800:
+    <div>
+      <div class="swatch spanner" data-x="800" data-for="l800" data-do=lighten>&nbsp;</div>
+      <div class="hex spanner" id="l800">&nbsp;</div>
+    </div>
+  </div>
+  <div class="col swatch-outer">lighten 900:
+    <div>
+      <div class="swatch spanner" data-x="900" data-for="l900" data-do=lighten>&nbsp;</div>
+      <div class="hex spanner" id="l900">&nbsp;</div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<script language="Javascript">
+const palettes =  [
+[ // #1
+"#E2190A",
+"#c7af6b",
+"#999",
+"#628078",
+"#B3190A",
+"#a4893d",
+"#f00",
+],[ // #2
+"#eb1736",
+"#5252d4",
+"#999",
+"#0f0",
+"#781a44",
+"#7575dd",
+"#f00",
+],[ // #3
+"#6ed3cf",
+"#e62739",
+"#999",
+"#0f0",
+"#9068be",
+"#e1e8f0",
+"#f00",
+],
+[ // #4
+"#61bab7",
+"#cb2232",
+"#809F9E",
+"#809F9E",
+"#00be00",
+"#cb2232",
+"#9068be",
+"#f00",
+],[ // #5
+"#5d001e",
+"#999",
+"#e3afbc",
+"#9a1750",
+"#ee4d7c",
+"#e3e2df",
+"#f00",
+"#f00",
+],[ // #6
+"#28567F",
+"#cb2232",
+"#ADB6C3",
+"#efe2ba",
+"#4056a1",
+"#c5cbe3",
+"#f00",
+],[ // #7
+"#2856B7",
+"#5d001e",
+"#45a29e",
+"#999",
+"#e3e2df",
+"#e3afbc",
+"#9a1750",
+"#ee4d7c",
+],[ // #8
+"#263F9D",
+//"#5d001e",
+"#6FD6D6",
+"#999",
+//"#45a29e",
+"#19A974",
+"#d0352c",
+"#FF6300",
+"#ee4d7c",
+"#e3e2df",
+"#e3afbc",
+"#9a1750",
+],[ // #9
+// darker red = #B3190A
+"#628078", // success - sage
+"#A4893D", // primary -  bronze "#628078", // variant of bronze
+"#D0352C", // accent  - dark red
+"#999",    // info
+"#E2190A", // danger
+"#781A44", // warning
+],[ // #10
+"#4E65A8", 
+"#D0352C", // accent  - dark red
+"#999",    // info
+"#628078", // success - sage
+"#B3190A", // darker red
+"#781A44", // warning
+]]
+
+defpalette = 8;
+// dark  red #B3190A
+// light red #E2190A
+
+//  bronze(dark) #A4893D
+            // lighter       #C7AF6B
+
+
+
+//red #CB2232
+//red #C43235
+//red #B3190A
+
+
+// not dry, but this is a quick hack -- variant of adjust() above
+function color_shift(color, how) {
+    console.log('color_shift', how, color)
+    switch (how) {
+      case 'darken':
+        return pSBC(- percs[offset], color)
+      case 'lighten':
+        return pSBC(percs[offset], color)
+    }
+}
+function spectrum(label, colors) {
+  let base = $('.spectrum-' + label + ' #x500').text()
+  colors = {}
+
+  $('.spectrum-' + label + ' .theme').each((obj, item) => {
+    colors[label] = {}
+    offset = item.dataset['x']
+    color = color_shift(base, item.dataset['do'])
+    if (color) {
+      item.style.backgroundColor = color
+      $('.spectrum-' + label + ' #' + item.dataset['for']).text(color.toUpperCase())
+    }
+  })
+}
+
+function setOnEach(key, fg, bg) {
+  $('.spectrum-' + key + ' #x500').text(fg.toUpperCase())
+  $('.c-' + key).each((obj, elem) => {
+    elem.style.color = fg // css({"color": + fg})
+    elem.style.backgroundColor = bg // css({"color": + fg})
+  })
+}
+
+function setColor(key, fg, bg) {
+  setOnEach(key, bg, fg)
+  setOnEach(key + '-inv', fg, bg)
+}
+
+const types = ["primary","accent", "info", "success", "danger", "warning"]
+
+function changeTheme(x) {
+  console.log("THEME", x)
+  const theme = palettes[x]
+  // let theme = palettes[0]
+  let y = 0;
+  let colors = {}
+  for (let x in types) {
+    const mode = types[x]
+    console.log("MODE", y, mode, theme[y])
+    setColor(mode, theme[y], "white")
+    setColor(mode, "white", theme[y])
+    $('.b--c-' + mode).each((obj, elem) => {
+      elem.style.borderColor = theme[y]
+      elem.style.color = theme[y]
+    })
+    y++;
+  }
+  for (let x in types) {
+    spectrum(types[x], colors)
+  }
+  showScss(colors)
+}
+function linkFun(x) {
+  return " <a href=\"javascript:changeTheme(" + x + ")\">Palette #" + (x+1) + "</a>"
+}
+$(document).ready(() => {
+  changeTheme(defpalette)
+  let output = []
+  console.log("DEF=>", defpalette)
+  for (x in palettes) {
+    x = parseInt(x)
+    if (defpalette === x) {
+      output.push("<i><b>" + linkFun(x) + "</b></i>")
+    } else {
+      output.push(linkFun(x))
+    }
+  }
+  document.getElementById('my-inputs').innerHTML = output.join(" | ")
+})
+function showScss(colors) {
+  let outtop = '// BEGIN: this was auto-generated from the {site}/palette page\n'
+  let outbot = ''
+  types.forEach((type, i) => {
+    outtop += `\$${type}-colors: (\n`
+    for (let x=1; x <= 9; x++) {
+      let scale = x * 100;
+      let color = $('.spectrum-' + type + ' #x' + scale).text()
+      outtop += `  ${scale}: ${color},\n`;
+      outbot += `\$${type}-${scale}: map-get(\$${type}-colors, ${scale});\n`
+    }
+    outbot += `\$${type}-color: \$${type}-500;\n`
+    outbot += `\$${type}-bg-text: white;\n` // should do something not default
+    outbot += `\$${type}-lighter: \$${type}-800;\n` // should do something not default
+    outbot += `\$${type}-light: \$${type}-700;\n` // should do something not default
+    outbot += `\$${type}-dark: \$${type}-300;\n` // should do something not default
+    outbot += `\$${type}-darker: \$${type}-200;\n` // should do something not default
+    outtop += ");\n"
+  })
+  outbot += '// END: this was auto-generated from the {site}/palette page\n'
+  $('#show-scss').html("<code><pre>" + outtop + "\n" + outbot + "</pre></code>")
+}
+</script>

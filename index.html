@@ -1,0 +1,108 @@
+---
+layout: default
+meta:
+  image:
+    path: /img/cognitive-logo-w300.webp
+    width: 1500
+    height: 668
+#features:
+#  aos: true
+#  parallaxjs: true
+---
+<div class="header-frame">
+  <video preload="auto" autoplay loop muted playsinline poster="/vid/trees.poster.jpg" class="header-media overflow-hidden">
+    <!-- todo later: responsive breakpoint on video to switch from width vs height max needs to take into consideration media sizes
+    <source src="/vid/trees.480.mp4" type="video/mp4" media="all and (max-width: 480px)" />
+    <source src="/vid/trees.360.mp4" type="video/mp4" media="all and (max-width: 360px)" />
+    <source src="/vid/trees.720.mp4" type="video/mp4" media="all and (max-width: 720px)" />
+    -->
+    <source src="/vid/trees.1080.mp4" type="video/mp4" media="all" />
+  </video>
+</div>
+<!-- this is a wierd bug.  If I leave out the border definitions, an extra padding appears at the bottom -->
+<div class="header-overlay" style="height: 100vh; border-top-style: solid; border-top-width: 1px; border-color: transparent;">
+  <div class="tc flex-m justify-center-m flex-l justify-center-l t6 w-100">
+    <picture>
+      <source type="image/webp" srcset="/img/cognitive-logo-w300.webp" class="responsive" width="200px" />
+      <img src="/img/cognitive-logo-w300.png" class="responsive" width="200px" />
+    </picture>
+    <div class="tl-m tl-l ml3-m ml4-l">
+      <div class="f1 fw4 text-halo white ttu" style="font-family: 'Nanum Gothic'; font-weight: 700">Cognitive</div>
+      <div class="f4 fw4 text-halo white i" style="font-family: 'Nanum Gothic'; font-weight: 700">Your Partner for the Global Innovation Economy</div>
+    </div>
+  </div>
+  <div class="arrow-down self-end"><a href="#jump"><i class="fas fa-angle-double-down"></i></a></div>
+</div>
+<div>
+  <a name="jump"></a>
+  <div class="mt2 mt2-m mt4-l pv4-l ph1 ph4-m ph6-l tl">
+    <div class="pv4 flex-l justify-center-l">
+      <div class="d-none d-md-flex mr2-m mr3-l items-start pt4">
+        <div class="flex items-center">
+          <div class="mh1 mh3-m mh3-l">
+            <i class="fas fa-brain color-primary" style="font-size: 8rem;"></i>
+          </div>
+          <div class="f4 light-tint self-center bw3 ph3 ml3" style="font-family: times">
+            <div class="f3 fw6">cog·ni·tive</div>
+            <div style="font-family: 'Roboto',arial,sans-serif; silver">/ˈkäɡnədiv/</div>
+            <div><span class="i">adjective;</span> The act or process of knowing.</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonials">
+        <div class="flex justify-center mt4">
+          <!-- img src="/img/cognitive-variant-perspective-w300.webp" class="brand-underlay" / -->
+          <div class="quotemark ml2 ml3-m ml5-l mt2 mt3-m mt3-l fas fa-quote-left"></div>
+          <div class="color-underlay"></div>
+          <div class="slider pr1 pr2-m pr3-l mt1 mt3-m mt3-l mr3-m mr3-l">
+            <div class="mask">
+              <ul>
+              {% assign nbr = 0 %}
+              {% for tmon in site.data.testimonials %}
+                {% assign nbr = nbr | plus: 1 %}
+                <li id="t-slide{{nbr}}" class="slide">
+                  <div class="slide-box">
+                    <div class="quote pa1 pa2-m pa2-l">{{ tmon.quote }}</div>
+                    <div class="source flex items-end">
+                      {% if tmon.headshot %}
+                      <img src="{{tmon.headshot}}" class=" pl1 pl2-m pl2-l" />
+                      {% endif %}
+                      <div class="ml1 ml2-m ml2-l">
+                        <div class="name">{{tmon.name}}</div>
+                        <div class="title f5">{{tmon.title}}</div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="tail mt1 mt2-m mt2-l"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mv2 mv2-m pv4-l ph1 ph4-m ph6-l mh1 mh4-m mh6-l tl">
+  <div class="mt4 pv4 ph0 ph4-m ph8-l">
+    Cognitive partners provide executive services to business ventures of all sizes.
+    Our industry seasoned team has expertise across many industries and sectors.
+    Not every company needs a full-time C-Suite, and we are available to fill-in where you need executive assistance.
+    <p/>
+    <!--
+    Strategic insights driving business impact.
+
+    Cognitive is a strategic advisory and staffing firm serving those charged with developing internal Innovation and Digital Transformation Programs needed to compete in today's global, knowledge-based economy.
+
+    <p/>
+    We differentiate ourselves based on our unique scientometric approach to research, strategy development, and tactical implementation to helps our clients create and maintain an innovation-based competitive and economic advantage.
+    -->
+    <div class="pt-2 tc">
+      <a href="/info/" class="myb myb-outline myb-rounded myb-large">
+      Learn More! &nbsp; <i class="fas fa-play"></i>
+      </a>
+    </div>
+  </div>
+</div>

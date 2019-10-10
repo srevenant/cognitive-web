@@ -1,0 +1,44 @@
+title: Cognitive
+name: Cognitive
+description: "Helping companies navigate the intersection of growth and success"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://cognitiveslc.com" # the base hostname & protocol for your site
+keywords: "startup, venture, capital, executive"
+
+favicon:
+  type: image/webp
+  url: /img/cognitive-logo-w32.webp
+
+connect:
+  email: inquiry@cognitiveslc.com
+  linkedin: 18996362
+  # github: cognitive
+
+markdown: kramdown
+permalink: pretty
+
+sass:
+  style: compressed
+
+# Collections
+collections:
+  team:
+    output: false
+  jobs:
+    output: true
+
+defaults:
+
+exclude:
+  - "/vendor/"
+  - "/_site/"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "README.md"
+  - "LICENSE.md"
+  - "*.gemspec"
+  - "*-unsplash.*"
+  - "push"
+  - "serve"
+  - "serve"
+  - "bootstrap-4.0.0"

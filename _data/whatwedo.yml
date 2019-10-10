@@ -1,0 +1,42 @@
+- label: Compliance
+  image: business.jpg
+  icon: fas fa-shield-alt
+  text: |-
+    We manage and store sensitive information for your business, to help
+    you meet the increasingly rigorous compliance and privacy regulations
+    (GDPR, CCRA, SOC, ISO).
+  button:
+    url: https://datauniverse.xyz/
+    label: "Cognitive: Reflex"
+    icon: fas fa-play
+- label: AI Cloud
+  image: business.jpg
+  icon: fas fa-building
+  text: |-
+    Data Ops, Decision Science, Data Virtualization, Data Flow, and AI as a
+    Service.
+    The Cognitive is where and how we store your data.
+    It's what makes the difference.
+  button:
+    url: https://datauniverse.xyz/
+    label: "Cognitive: Polyforms"
+    icon: fas fa-play
+- label: Services
+  image: services.jpg
+  icon: fas fa-people-carry
+  text: |-
+    Getting value from data can be challenging. Our team is here to help!
+  button:
+    url: /services/
+    label: Services
+    icon: fas fa-play
+# - label: Developers&nbsp;&amp;&nbsp;Scientists
+#   image: developer.jpg
+#   icon: fas fa-diagnoses
+#   text: |-
+#     Learn how you can contribute to the Cognitive, by adding your own
+#     Polyforms to the overall Shared Intelligence system.
+#   button:
+#     url: https://datauniverse.xyz/innovation/
+#     label: Innovate!
+#     icon: fas fa-play

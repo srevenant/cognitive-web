@@ -1,0 +1,36 @@
+#!/bin/bash
+
+lane=$1
+case $lane in
+    test|live)
+        echo "pushing to $lane"
+        ;;
+    *)
+        echo "Which? test or live?"
+        exit 1
+        ;;
+esac
+
+rm -rf _site
+bundle exec jekyll build || exit 1
+cd _site || {
+    echo "Cannot CD to _site?"
+    exit 1
+}
+~/git/protos/fingerprint.py .
+
+export WEB_DOMAIN_BUCKET=cognitive.cold.org
+
+case $lane in
+    test)
+        rsync --exclude '*-unsplash.*' --exclude '*.xcf' \
+              --delete -va .\
+              aws1:/app/web/$WEB_DOMAIN_BUCKET/$lane/.
+        ;;
+    live)
+        echo "Nope"
+#        s3cmd sync --exclude='*-unsplash.*' --exclude '*.xcf' -v -r .\
+#             s3://$WEB_DOMAIN_BUCKET --delete-removed --acl-grant 'read:*'
+        ;;
+esac
+

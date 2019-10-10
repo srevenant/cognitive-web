@@ -1,0 +1,14 @@
+<script src="/js/highlight.pack.js"></script>
+<script>
+  $(document).ready(function(){
+    $('code.remote').each((x, elem) => {
+        var dataURL = $(elem).attr('href');
+        $(elem).load(dataURL, (resp, status, xhr) => {
+          // lame fanout, will circle back to this later
+          $('code.remote').each((x, e) => {
+            hljs.highlightBlock(e)
+          });
+        });
+    });
+  });
+</script>

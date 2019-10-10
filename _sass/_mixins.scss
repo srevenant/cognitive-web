@@ -1,0 +1,101 @@
+/* Media Queries */
+@mixin mq-xs {
+  @media (min-width: map-get($grid-breakpoints, "xs")) {
+    @content;
+  }
+}
+
+@mixin mq-sm {
+  @media (min-width: map-get($grid-breakpoints, "sm")) {
+    @content;
+  }
+}
+
+@mixin mq-md {
+  @media (min-width: map-get($grid-breakpoints, "md")) {
+    @content;
+  }
+}
+
+@mixin mq-lg {
+  @media (min-width: map-get($grid-breakpoints, "lg")) {
+    @content;
+  }
+}
+
+@mixin mq-xl {
+  @media (min-width: map-get($grid-breakpoints, "xl")) {
+    @content;
+  }
+}
+
+@mixin transition-all()
+{
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+@mixin background-cover()
+{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+/*
+@mixin button-variant($color, $background, $border)
+{
+	color: $color;
+	background-color: $background;
+	border-color: none; // $border;
+	@include transition-all;
+
+	&:hover,
+	&:focus,
+	&.focus,
+	&:active,
+	&.active,
+	.open > .dropdown-toggle & {
+    box-shadow: none;
+		color: $color;
+		background-color: $background; // darken($background, 5%);
+    border-color: none; // darken($border, 7%);
+	}
+	&:active,
+	&.active,
+	.open > .dropdown-toggle & {
+		background-image: none;
+		background-color: $background; // darken($background, 5%);
+    border-color: none; // darken($border, 7%);
+	}
+	&.disabled,
+	&[disabled],
+	fieldset[disabled] & {
+		&,
+		&:hover,
+		&:focus,
+		&.focus,
+		&:active,
+		&.active {
+			background-color: $background;
+			border-color: none; // $border;
+		}
+	}
+	.badge {
+		color: $background;
+		background-color: $color;
+		border-color: none; // $border;
+	}
+}
+*/
+
+@mixin sans-serif-font()
+{
+  font-family: $base-font, sans-serif;
+}
+
+@mixin serif-font()
+{
+	font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+}

@@ -1,0 +1,31 @@
+- label: Data Science
+  icon: fa-flask
+  text: |-
+    Data and Analytics are a significant challenge for most organizations.  But Data Science
+    is not just about doing some math, it is mostly about getting the right data,
+    in the right place, knowing what to do with it, and then making these results available
+    for you.
+
+- label: UX - Product Science
+  icon: fa-mobile-alt
+  text: |-
+    Partnered with
+    <a href="https://startupreactor.xyz/">Gigstartup Reactor</a> we are developing Data Science tools to help
+    guide good product design.  The UX movement around product design is leveraging
+    analytics to help understand the interactions, and we are taking it a step
+    further to bring in full AI to help guide even the teams building and developing
+    the product.
+- label: Platform &amp; DevOps
+  icon: fa-server
+  text: |-
+    Our team is experienced building on all levels, from mega-scale complexes,
+    top-secret centers, and a variety of complexes including Docker and Kubernetes
+    automation with full Continuous Delivery and meeting regulatory requirements
+    with data governance.
+- label: Compliance
+  icon: fa-shield-alt
+  text: |-
+    Do you need compliance, but don't know how to get there? We have a library of
+    processes and tools which have been used with successful startups to run modern
+    DevOps CI/CD processes and still meet compliance, such as PCI, SOC, ISO9660, GDPR,
+    and more.  Ask us about our boilerplate process to help get your team to the next level.

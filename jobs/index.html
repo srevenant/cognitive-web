@@ -1,0 +1,48 @@
+---
+layout: default
+title: Jobs
+meta:
+  image:
+    path: /img/team.jpg
+    width: 1500
+    height: 813
+---
+
+<section class="header bg-img-team"><!-- note: parallax is broken -BJG -->
+<div class="container px-0">
+<div class="col" style="padding-top: 50px; padding-bottom: 50px;">
+<div class="parallax-text text-center heading px-0">
+<h1>&nbsp;</h1>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container px-1 px-sm-2 px-md-3 px-lg-6">
+  <div class="row pt-4">
+    <div class="col">
+      <h1>Join our Team</h1>
+
+We’re hiring! Even if we don't have a job listed, we are always interested in
+hearing from potential candidates, so don't hesitate to reach out!
+
+<h1>Open Job Postings</h1>
+</div>
+</div>
+    {% for job in site.jobs %}
+    {% if job.enabled == true %}
+<div class="job-listing">
+<div class="d-flex flex-row px-1 px-md-3 px-lg-6 justify-content-between">
+  <div class="p-1">
+    <a class=job-title href="{{job.url}}">{{job.name}}</a>
+  </div>
+  <div class="p-1 job-location">
+    Salt Lake Regional Area
+  </div>
+</div>
+    {% endif %}
+    {% endfor %}
+</div>
+</div>
+</section>

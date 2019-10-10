@@ -1,0 +1,15 @@
+team:
+  cols: 2
+  data:
+  - counter: 1200
+    icon: fas fa-highlighter fa-2x
+    text: Whiteboard Markers
+  - counter: 2000
+    icon: fas fa-database fa-2x
+    text: Different Databases
+  - counter: 15000
+    icon: fas fa-wine-bottle fa-2x
+    text: Gallons of Soft Drink
+  - counter: 7500
+    icon: fas fa-shield-alt fa-2x
+    text: Millions Protected

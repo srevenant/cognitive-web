@@ -1,0 +1,115 @@
+/*
+$breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+$grid-breakpoints: $breakpoints;
+
+/*
+$spacer: 1rem;
+$spacers: ();
+
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * 0.25),   //4px
+    2: ($spacer * 0.5),    //8px
+    3: ($spacer * 1),      //16px
+    4: ($spacer * 1.5),    //24px
+    5: ($spacer * 3),      //48px
+    6: ($spacer * 4),      //64px
+    7: ($spacer * 5),      //80px
+    8: ($spacer * 6.25),   //100px
+    9: ($spacer * 7.5),    //120px
+    10: ($spacer * 9.375)  //150px
+  ),
+  $spacers);
+
+$spacer-0: map-get($spacers, 0);
+$spacer-1: map-get($spacers, 1);
+$spacer-2: map-get($spacers, 2);
+$spacer-3: map-get($spacers, 3);
+$spacer-4: map-get($spacers, 4);
+$spacer-5: map-get($spacers, 5);
+$spacer-6: map-get($spacers, 6);
+$spacer-7: map-get($spacers, 7);
+$spacer-8: map-get($spacers, 8);
+$spacer-9: map-get($spacers, 9);
+$spacer-10: map-get($spacers, 10);
+*/
+
+//.text parallax box - flowing of parallax images--left/right
+.textbox-outer {
+	.textbox {
+		margin: 0;
+		padding: 0;
+		padding-top: $spacer-1;
+		padding-bottom: $spacer-1;
+	}
+	@include mq-xs {
+		padding: $spacer-1;
+		.text-left {
+			padding-right: $spacer-1;
+		}
+		.text-right {
+			padding-left: $spacer-1;
+		}
+	}
+	@include mq-sm {
+		padding: $spacer-1;
+		margin-left: $spacer-2;
+		margin-right: $spacer-2;
+		.text-left {
+			padding-right: $spacer-2;
+		}
+		.text-right {
+			padding-left: $spacer-2;
+		}
+		.box-on-left {
+			padding-right: $spacer-2;
+		}
+		.box-on-right {
+			padding-left: $spacer-2;
+		}
+		.row {
+			padding-left: $spacer-2;
+			padding-right: $spacer-2;
+		}
+	}
+	@include mq-md {
+		margin-left: $spacer-4;
+		margin-right: $spacer-4;
+		.textbox {
+		  padding-bottom: $spacer-2;
+		}
+		.row {
+			padding-left: $spacer-2;
+			padding-right: $spacer-2;
+		}
+	}
+	@include mq-lg {
+		margin-left: $spacer-8;
+		margin-right: $spacer-8;
+		.row {
+			padding-left: $spacer-4;
+			padding-right: $spacer-4;
+		}
+		.parallax-window {
+			padding: 0;
+		}
+		.text-right {
+			padding-left: $spacer-4;
+		}
+		.text-left {
+			padding-right: $spacer-4;
+		}
+		.box-on-left {
+			padding-right: $spacer-4;
+		}
+		.box-on-right {
+			padding-left: $spacer-4;
+		}
+		.textbox {
+		  padding-bottom: $spacer-2;
+		}
+	}
+	@include mq-xl {
+	}
+}

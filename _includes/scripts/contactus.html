@@ -1,0 +1,38 @@
+<script language="Javascript">
+  $(function() {
+    $('#insert-contact-form').each((x, elem) => {
+        var dataURL = $(elem).attr('data-src');
+        $(elem).load(dataURL, (resp, status, xhr) => {
+          contactOnClick(dataURL)
+        });
+    });
+  });
+  function contactOnClick(src) {
+    $('#contact-form .send-msg').on('click', function(e) {
+      $('#contact-form .error-msg').removeClass("text-dangerous").addClass("text-primary").html('Submitting...')
+      e.preventDefault();
+      $.ajax({
+        type: "POST",
+        url: src,
+        data: $('#contact-form').serialize(),
+        success: function(response) {
+          $('#contact-form .error-msg').removeClass("text-dangerous").addClass("text-primary").html(response)
+          setTimeout(function() {
+            $('#modal-contact-us').modal('hide')
+            $("#contact-form")[0].reset();
+            $('#contact-form .error-msg').html('')
+          }, 1000)
+        },
+        error: function(jqXHR, exception) {
+          $('#contact-form .error-msg').removeClass("text-primary").addClass("text-dangerous")
+          if (jqXHR.status == 400) {
+            $('#contact-form .error-msg').html(jqXHR.responseText)
+          } else {
+            $('#contact-form .error-msg').html('Error: ' + jqXHR.status)
+          }
+        }
+      })
+      return false
+    })
+  }
+</script>

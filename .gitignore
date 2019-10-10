@@ -1,0 +1,13 @@
+/**/*.swp
+/**/*.swo
+/**/_site
+/**/.sass-cache
+/**/.jekyll-metadata
+/**/.jekyll-cache
+/**/.bundle
+/**/Gemfile.lock
+/**/vendor/
+/**/.DS_Store
+/**/*-unsplash.jpg
+/**/*-unsplash.png
+/**/*-unsplash.xcf

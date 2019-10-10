@@ -1,0 +1,62 @@
+# Note:
+# * headshots are located in ../team/headshots/
+# * influence-logos are located in ../team/logos/
+#   --> save logos at 40px high
+#
+- name: Allie
+  headshot: allie.jpg
+  info: |-
+    Analyst.
+    Addicted to solving challenging problems, loves to explore new places and binge watch good series.
+
+- name: Anant
+  headshot: anant.jpg
+  info: |-
+
+    Solutions Engineer / Data Scientist. Anant loves finding elegant and robust solutions to complex problems. He also loves the outdoors.
+
+- name: Brandon
+  headshot: brandon.jpg
+  influence-logos:
+    - divvy.png
+    - kuali.png
+    - freebsd.png
+    - iomega.png
+    - usaf.png
+  info: |-
+
+    Software Engineer. Family of 5, loves the outdoors, games, writing, and the challenges of software architecture.
+
+- name: Derrick
+  headshot: derrick.jpg
+  info: |-
+
+    Project and Release Manager.
+    When not in the land of software, Derrick can be found in his music studio, or with his family.
+
+- name: Morgan
+  headshot: morgan.jpg
+  info: |-
+
+    Software Engineer Intern. Likes learning sciency stuff, programming, aerospace, and drawing.
+
+- name: Nick
+  headshot: nick.jpg
+  info: |-
+
+    Data Engineer.
+    Solving for Potential. Universally. Organizing family, friends and generations with Shared Intelligence and Data Science in Connected Smart Communities.
+
+- name: Seth
+  headshot: seth.jpg
+  info: |-
+
+    Security Engineer.
+    Loves soccer and the outdoors, avid security advocate.
+
+- name: Tim
+  headshot: tim.jpg
+  info: |-
+
+    Customer Relationships and Director of Services.
+    Loves working on hard problems with smart people. Is hypnotized by clouds. Likes the slopes.

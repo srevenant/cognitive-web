@@ -1,0 +1,61 @@
+event-list {
+  ev-item {
+    ev-head {
+      ev-title {
+        display: block;
+        font-weight: 400;
+        font-size: larger;
+        color: $primary-lighter;
+        border-bottom: solid 1px $primary-dark;
+      }
+      ev-header {
+        padding: 2px;
+        display: block;
+        font-size: smaller;
+      }
+    }
+    ev-body {
+      display:block;
+      padding: $spacer * 0.5;
+      font-size: smaller;
+    }
+  }
+}
+event-detail {
+  ev-item {
+    ev-head {
+      ev-title {
+        display: block;
+        font-weight: 400;
+        font-size: larger;
+        color: $primary-lighter;
+        border-bottom: solid 1px $primary-dark;
+      }
+      ev-header {
+        padding: 2px;
+        display: block;
+        font-size: smaller;
+      }
+    }
+    ev-body {
+      display:block;
+      padding: $spacer * 0.5;
+      font-size: smaller;
+    }
+  }
+}
+.parallax-window event-detail {
+  padding: 1em;
+  background-color: rgba(0,0,0, .5);
+}
+event-detail.parallax-text a {
+  color: $primary-500;
+}
+event-detail.parallax-text ev-title {
+  font-size: x-large;
+  font-weight: 500;
+  letter-spacing: 0.25rem;
+  line-height: 200%;
+  color: white;
+  margin-bottom: 1rem;
+}

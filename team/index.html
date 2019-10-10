@@ -1,0 +1,99 @@
+---
+layout: default
+title: Team
+meta:
+  image:
+    path: /img/team.jpg
+    width: 1500
+    height: 813
+  count-for: team
+features:
+  counterup: true
+---
+
+<section class="header bg-img-team"><!-- note: parallax is broken -BJG -->
+<div class="container px-0">
+<div class="col" style="padding-top: 50px; padding-bottom: 50px;">
+<div class="parallax-text text-center heading px-0">
+<h1>&nbsp;</h1>
+</div>
+</div>
+</div>
+</section>
+
+  <div class="container">
+    <div class="row px-1 px-sm-2 px-md-4 px-lg-8 text-center">
+      <div class="col section-title text-center">
+        <h2>About Us</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg text-center">
+        <h4>Fun Facts</h4>
+        {% include countbox.html %}
+      </div>
+      <div class="col-lg">
+        <h4>What We Find Important</h4>
+        <ul>
+          <li>Outward Mindsets
+          <li>Design Thinking
+          <li>People over Process and Tools
+          <li>Collaboration
+          <li>Responding to Change
+          <li>Simplify
+          <li>Assume the Best
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<div class="mt3">
+  <div class="tc">
+    <h1>The Faces Behind Cognitive</h1>
+  </div>
+</div>
+<div class="flex flex-wrap justify-center mh3 mh4-m mh5-l mb3 mb4-m mb5-l">
+  {% for mbr in site.data.team %}
+    <div class="member-outer flex flex-column">
+      <div class="member-stripe"></div>
+      <div class="member-inner ma2 ma3-l">
+        <div class="flex items-center">
+          <img src="/team/headshots/{{ mbr.headshot }}" class="responsive member-pic" alt="{{ mbr.alt }}">
+          <div class="member-name white ml1 ml2-m ml3-l">{{ mbr.name }}</div>
+        </div>
+        <div class="relative f4 bn pv2 bg-animate hide-child">
+          <div class="member-logos flex flex-wrap mt1">
+            {% for img in mbr.influence-logos %}
+              <div class="logo ph1 ph2-m ph2-l ma0">
+                <img src="/team/logos/{{ img }}" class="responsive pa0 ma0" />
+              </div>
+            {% endfor %}
+          </div>
+          <span class="db absolute top-4 mt3 z-1 w4 w5-m w5-l bg-white ba br2 b--moon-gray pa2 shadow-5 child">
+            <p class="f6 lh-copy near-black ma0">
+              Amazing places {{ mbr.name }} has worked for, influenced, or mentored
+            </p>
+            <span class="absolute top-0 left-2 nt2 w1 h1 bg-white bl bt b--moon-gray rotate-45"></span>
+          </span>
+        </div>
+        <div class="member-bio mt1">{{ mbr.info }}</div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+
+<main class="sans-serif pa4">
+  <section class="mw6 center">
+    <button class="relative f4 white bg-black hover-bg-blue bn br-pill pv2 ph3 bg-animate hide-child">Hover me!
+      <img src="/team/logos/iomega.png" />
+      <span class="db absolute top-2 mt3 z-1 w4 w5-m w5-l bg-white ba br2 b--moon-gray pa2 shadow-5 child">
+        <p class="f6 lh-copy near-black ma0">
+          Boop beep bop
+        </p>
+        <span class="absolute top-0 left-2 nt2 w1 h1 bg-white bl bt b--moon-gray rotate-45"></span>
+      </span>
+    </button>
+    <p class="silver lh-copy">Hover the button above to see the tooltip in action!</p>
+  </section>
+</main>
