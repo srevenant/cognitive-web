@@ -53,7 +53,8 @@ features:
   </div>
 </div>
 <div class="flex flex-wrap justify-center mh3 mh4-m mh5-l mb3 mb4-m mb5-l">
-  {% for mbr in site.data.team %}
+  {% assign teamlist = site.data.team | sort: 'name' %}
+  {% for mbr in teamlist %}
     <div class="member-outer flex flex-column">
       <div class="member-stripe"></div>
       <div class="member-inner ma2 ma3-l">
