@@ -1,13 +1,15 @@
 # Note:
 # * headshots are located in ../team/headshots/
+#   --> save headshots at 300px x 300px
 # * influence-logos are located in ../team/logos/
 #   --> save logos at 40px high
 #
-- name: Allie
-  headshot: allie.jpg
+- name: Jake
+  headshot: Jake.jpg
+  influence-logos: 
   info: |-
-    Analyst.
-    Addicted to solving challenging problems, loves to explore new places and binge watch good series.
+
+    A mixture of creative, innovative, goofy, and business savvy. Jake was born and raised in Utah. He enjoys challenging questions and deep philosophical discussions.
 
 - name: Anant
   headshot: anant.jpg
