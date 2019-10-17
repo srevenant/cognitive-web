@@ -58,7 +58,9 @@ features:
       <div class="member-stripe"></div>
       <div class="member-inner ma2 ma3-l">
         <div class="flex items-center">
-          <img src="/team/headshots/{{ mbr.headshot }}" class="responsive member-pic" alt="{{ mbr.alt }}">
+          <a href="{{ mbr.linkedin }}">
+            <img src="/team/headshots/{{ mbr.headshot }}" class="responsive member-pic" alt="{{ mbr.alt }}">
+          </a>
           <div class="member-name white ml1 ml2-m ml3-l">{{ mbr.name }}</div>
         </div>
         <div class="relative f4 bn pv2 bg-animate hide-child">
@@ -81,19 +83,3 @@ features:
     </div>
   {% endfor %}
 </div>
-
-
-<main class="sans-serif pa4">
-  <section class="mw6 center">
-    <button class="relative f4 white bg-black hover-bg-blue bn br-pill pv2 ph3 bg-animate hide-child">Hover me!
-      <img src="/team/logos/iomega.png" />
-      <span class="db absolute top-2 mt3 z-1 w4 w5-m w5-l bg-white ba br2 b--moon-gray pa2 shadow-5 child">
-        <p class="f6 lh-copy near-black ma0">
-          Boop beep bop
-        </p>
-        <span class="absolute top-0 left-2 nt2 w1 h1 bg-white bl bt b--moon-gray rotate-45"></span>
-      </span>
-    </button>
-    <p class="silver lh-copy">Hover the button above to see the tooltip in action!</p>
-  </section>
-</main>
