@@ -42,12 +42,15 @@ div.header-frame {
     // width < 1920, height > 1080 => fit by height
     // width < 1920, height < 1080 => fit by height
     */
+    /*
     height: 100vh;
     width: auto;
-    @media screen and (orientation: landscape) and (min-width: 1280px) and (max-height: 1080px) {
+    // @media screen and (orientation: landscape) and (min-width: 1280px) and (max-height: 1080px) {
+    @media screen and (orientation: landscape) and (min-width: 1920px) and (max-height: 1080px) {
       height: auto;
       width: 100vw;
     }
+    */
     z-index: -1;
   }
   img.header-media {
@@ -227,69 +230,12 @@ a:active {
 .service-box {
   color: $primary-color;
 }
+
 #example-code {
   .modal-body {
     padding: 0;
     max-height: calc(85vh); //100vh - 180px);
     overflow-y: auto;
-  }
-}
-#whatWeDo .carousel-control-prev, .carousel-control-next {
-  width: 5%;
-  color: $primary-color !important;
-}
-#whatWeDo .carousel-control-next-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%231b4ea3' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E")
-}
-#whatWeDo .carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%231b4ea3' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E")
-}
-#whatWeDo.carousel.slide.shadowbox {
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  background-color: #eee;
-  border: none;
-
-  .card-info-holder {
-    width: auto;
-    // @include media-breakpoint-up(lg) {
-    //   width: 50%;
-    // }
-  }
-  .card-image-holder {
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
-    // @include media-breakpoint-up(lg) {
-    //   width: 50% !important;
-    //   height: 100% !important;
-    // }
-    // @include media-breakpoint-down(lg) {
-    //   width: 100% !important;
-    //   height: 100% !important;
-    // }
-  }
-  .card-image-holder {
-    img {
-      @include media-breakpoint-up(lg) {
-        height: 380px !important;
-        width: auto;
-      }
-      @include media-breakpoint-down(md) {
-        width: 100% !important;
-        height: auto;
-      }
-    }
-  }
-}
-#whatWeDo .carousel-indicators {
-  top: 5px;
-  bottom: auto;
-  li {
-    width: 10%;
-    height: 10px;
   }
 }
 

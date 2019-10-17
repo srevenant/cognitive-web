@@ -1,0 +1,17 @@
+<script language="Javascript">
+$(document).ready(() => {
+  let slidePosition = 0
+  function shiftSlide() {
+    const lastSlide = tslides[slidePosition]
+    slidePosition++
+    if (slidePosition >= tslides.length) {
+      slidePosition = 0
+    }
+    const nextSlide = tslides[slidePosition]
+    $(lastSlide).fadeOut(750)
+    $(nextSlide).fadeIn(750)
+  }
+  shiftSlide()
+  setInterval(shiftSlide, 10000)
+})
+</script>
