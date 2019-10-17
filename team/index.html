@@ -59,16 +59,22 @@ features:
       <div class="member-stripe"></div>
       <div class="member-inner ma2 ma3-l">
         <div class="flex items-center">
-          <a href="{{ mbr.linkedin }}">
+          <a href="{{ mbr.linkedin }}" rel="nofollow">
             <img src="/team/headshots/{{ mbr.headshot }}" class="responsive member-pic" alt="{{ mbr.alt }}">
           </a>
           <div class="member-name white ml1 ml2-m ml3-l">{{ mbr.name }}</div>
         </div>
         <div class="relative f4 bn pv2 bg-animate hide-child">
-          <div class="member-logos flex flex-wrap mt1">
+          <div class="member-logos flex flex-wrap mt1 justify-between">
             {% for img in mbr.influence-logos %}
               <div class="logo ph1 ph2-m ph2-l ma0">
+                {% if img.link %}
+                <a href="{{ img.link }}" rel="nofollow">
+                  <img src="/team/logos/{{ img.file }}" class="responsive pa0 ma0" />
+                </a>
+                {% else %}
                 <img src="/team/logos/{{ img }}" class="responsive pa0 ma0" />
+                {% endif %}
               </div>
             {% endfor %}
           </div>
