@@ -54,7 +54,9 @@ features:
 </div>
 <div class="flex flex-wrap justify-center mh3 mh4-m mh5-l mb3 mb4-m mb5-l">
   {% assign teamlist = site.data.team | sort: 'name' %}
+  {% assign teamlist = site.data.team | shuffle %}
   {% for mbr in teamlist %}
+  <!-- linked in link -->
     <div class="member-outer flex flex-column">
       <div class="member-stripe"></div>
       <div class="member-inner ma2 ma3-l">
@@ -78,14 +80,14 @@ features:
               </div>
             {% endfor %}
           </div>
-          <span class="db absolute top-4 mt3 z-1 w4 w5-m w5-l bg-white ba br2 b--moon-gray pa2 shadow-5 child">
+          <span class="db absolute top-4 mt3 z-1 w4 w5-m w5-l bg-near-white ba br2 b--moon-gray pa2 shadow-5 child">
             <p class="f6 lh-copy near-black ma0">
               Amazing places {{ mbr.name }} has worked for, influenced, or mentored
             </p>
-            <span class="absolute top-0 left-2 nt2 w1 h1 bg-white bl bt b--moon-gray rotate-45"></span>
+            <span class="absolute top-0 left-2 nt2 w1 h1 bl bt b--moon-gray bg-near-white rotate-45"></span>
           </span>
         </div>
-        <div class="member-bio mt1">{{ mbr.info }}</div>
+        <div class="member-bio mt1">{{ mbr.bio.short }}</div>
       </div>
     </div>
   {% endfor %}

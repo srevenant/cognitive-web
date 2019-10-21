@@ -2,7 +2,7 @@
 # * headshots are located in ../team/headshots/
 #   --> save headshots at 300px x 300px
 # * influence-logos are located in ../team/logos/
-#   --> save logos at 40px high
+#   --> save logos at 80px high, cropped tightly to the content, except for where padding is needed to scale the image well against the others.
 
 - name: David R
   headshot: david r.jpg
@@ -15,9 +15,19 @@
     - navillum.jpg
     - ezlift.jpg
     - ilumens.jpg
-  info: |-
+  bio:
+    short: |-
+      CEO of 9+ companies over the last 30 years, David brings a breadth
+      of real-world experiences across the numerous challenges executives face,
+      which help him guiding companies to success and growth.
 
-    As the chief executive and/or operational officer of nine companies over the last 30 years, I have developed a strong portfolio of the often intangible qualities that promote success and growth in an organization. I am a visionary, executive level manager with extensive real-world, experience and successes in managing the day to day operations and finances of business.
+    long: |-
+      As the chief executive and/or operational officer of nine companies over
+      the last 30 years, I have developed a strong portfolio of the often
+      intangible qualities that promote success and growth in an organization.
+      I am a visionary, executive level manager with extensive real-world,
+      experience and successes in managing the day to day operations and
+      finances of business.
 
 - name: Jason
   headshot: jason.jpg
@@ -29,9 +39,14 @@
     - coherex.jpg
     # - lineagen.jpg
     # - novartis.jpg
-  info: |-
-
-    Jason is the director of the lifesciences practice at Cognitive. He has extensive experience in the lifescience industry including designing and conducting clinical studies around the world, developing medical devices and diagnostics, and using artificial intelligence to improve patient outcomes. He also managed the accelerator program at the University of Utah Technology Venture and Commercialization Office (TVC) and was a Director for the Society of Physician Entrepreneurs (Utah chapter). Jason graduated from the University of Utah School of Medicine (Alpha Omega Alpha) and the University of Notre Dame Graduate School of Business (Magna Cum Laude).
+  bio:
+    short: |-
+      Director of Lifesciences, with a MD in Medicine from the University of Utah, Jason brings executive experience from the medical industry across many ventures including global clinical studies, medical devices, and leveraging AI to improve patient outcomes.
+    long: |-
+      includes designing and conducting clinical studies
+      around the world, developing medical devices and diagnostics, and using
+      artificial intelligence to improve patient outcomes.
+      Jason graduated from the University of Utah School of Medicine (Alpha Omega Alpha).
 
 - name: Tara
   headshot: tara.jpg
@@ -44,9 +59,12 @@
     - jpmorganchase.jpg
     - usbank.jpg
     - gehealthcare.jpg
-  info: |-
+  bio:
+    short: |-
+      Passionate about human development, sales enablement and inspiring high performing teams, Tara has been instrumental in increasing the win rates, client retention, and revenue of some of the largest financial instutions and most prestigious corporations in the world including HP, SAP, GE, UnitedHeal<span class="red">thcare, and Boeing.</span>
 
-    Passionate about human development, sales enablement and inspiring high performing teams, Tara has been instrumental in increasing the win rates, client retention, and revenue of some of the largest financial instutions and most prestigious corporations in the world including HP, SAP, GE, UnitedHealthcare, and Boeing.
+    long: |-
+      Passionate about human development, sales enablement and inspiring high performing teams, Tara has been instrumental in increasing the win rates, client retention, and revenue of some of the largest financial instutions and most prestigious corporations in the world including HP, SAP, GE, UnitedHealthcare, and Boeing.
 
 - name: Dave M
   headshot: dave m.jpg
@@ -58,9 +76,11 @@
     - kutv.jpg
     - nike.jpg
     - viacom.jpg
-  info: |-
-
-    Murray is a visionary, a leader, and someone who has been finding ways to connect the dots for nearly 30 years. He's an experienced business owner, CEO, CMO, and currently serves on multiple boards of directors. Murray is also an adept business development professional and his experience includes working within multiple disciplines: SaaS, manufacturing, television broadcasting, consumer goods, medical devices, AR and VR, digital marketing, real estate, advertising, public relations, and sales. On multiple occasions, he and his teams have won awards in their respective industries. As strategist for Cognitive, Murray is responsible for identifying potential and possibilities, assessing market viability, and developing messaging and direction for client companies. Additionally, Murray helps these same companies implement data gathering systems and turn the gathered data into actionable insights.
+  bio:
+    short: |-
+      Murray is a visionary, a leader, and someone who has been finding ways to connect the dots for nearly 30 years. He's an experienced business owner, CEO, CMO, and currently serves on multiple boards of directors. Murray is also an adept business development professional and his experience includes wo<span class="red">rking within multiple disciplines: SaaS, manufacturing, television broadcasting, consumer goods, medical devices, AR and VR, digital marketing, real estate, advertising, public relations, and sales. On multiple occasions, he and his teams have won awards in their respective industries. As strategist for Cognitive, Murray is responsible for identifying potential and possibilities, assessing market viability, and developing messaging and direction for client companies. Additionally, Murray helps these same companies implement data gathering systems and turn the gathered data into actionable insights.</span>
+    long: |-
+      Murray is a visionary, a leader, and someone who has been finding ways to connect the dots for nearly 30 years. He's an experienced business owner, CEO, CMO, and currently serves on multiple boards of directors. Murray is also an adept business development professional and his experience includes wo<span class="red">rking within multiple disciplines: SaaS, manufacturing, television broadcasting, consumer goods, medical devices, AR and VR, digital marketing, real estate, advertising, public relations, and sales. On multiple occasions, he and his teams have won awards in their respective industries. As strategist for Cognitive, Murray is responsible for identifying potential and possibilities, assessing market viability, and developing messaging and direction for client companies. Additionally, Murray helps these same companies implement data gathering systems and turn the gathered data into actionable insights.</span>
 
 - name: Rob
   headshot: rob.jpg
@@ -72,9 +92,12 @@
     - medicalintelligence.jpg
     - talos.jpg
     - ehow.jpg
-  info: |-
+  bio:
+    short: |-
+      Robert Brazell is an American businessman, entrepreneur, e-commerce pioneer, and futurist. He is formerly the founder, CEO, and Chairman of Talos Partners, a private investment firm managed and operated by a diversely accomplished group of business and government leaders, including a two-time WI Sen<span class="red">ator Robert W. Kasten, Jr. Prior to founding Talos, Rob Brazell served as the Chief Executive Officer and Founding Board Member of Overstock.com, a nearly $1 billion a year online enterprise which he founded in 1997, as D2: Discounts Direct. Brazell has been the owner of several Internet properties, including eHow.com, a content and search site; Delphi Forums, the first online discussion group community; and Gamebase International, Inc, a project to develop the world's first jurisdictionally-compliant, secure gaming system and platform for interactive gaming. Robert Brazell has raised and invested more than $200 million in the past ten years. He is the co-author of ""The Idea Economy"" (1995) in which he argues that the most needed innovation is innovation itself. Brazell served on the board of the Deseret Foundation, dedicating two years to help establish an organization that pioneered ""entrepreneurial approach"" to medical charity by establishing self-sufficient infrastructure in over a dozen countries to provide predictable surgical care to children. Rob is the Founder of Medical+Intelligence™, a big data, technology, and education company providing unprecedented prevention, diagnostic, and treatment opportunities to primary care physicians and their patients across the United States. "</span>
 
-    Robert Brazell is an American businessman, entrepreneur, e-commerce pioneer, and futurist. He is formerly the founder, CEO, and Chairman of Talos Partners, a private investment firm managed and operated by a diversely accomplished group of business and government leaders, including a two-time WI Senator Robert W. Kasten, Jr. Prior to founding Talos, Rob Brazell served as the Chief Executive Officer and Founding Board Member of Overstock.com, a nearly $1 billion a year online enterprise which he founded in 1997, as D2: Discounts Direct. Brazell has been the owner of several Internet properties, including eHow.com, a content and search site; Delphi Forums, the first online discussion group community; and Gamebase International, Inc, a project to develop the world's first jurisdictionally-compliant, secure gaming system and platform for interactive gaming. Robert Brazell has raised and invested more than $200 million in the past ten years. He is the co-author of ""The Idea Economy"" (1995) in which he argues that the most needed innovation is innovation itself. Brazell served on the board of the Deseret Foundation, dedicating two years to help establish an organization that pioneered ""entrepreneurial approach"" to medical charity by establishing self-sufficient infrastructure in over a dozen countries to provide predictable surgical care to children. Rob is the Founder of Medical+Intelligence™, a big data, technology, and education company providing unprecedented prevention, diagnostic, and treatment opportunities to primary care physicians and their patients across the United States. "
+    long: |-
+      Robert Brazell is an American businessman, entrepreneur, e-commerce pioneer, and futurist. He is formerly the founder, CEO, and Chairman of Talos Partners, a private investment firm managed and operated by a diversely accomplished group of business and government leaders, including a two-time WI Sen<span class="red">ator Robert W. Kasten, Jr. Prior to founding Talos, Rob Brazell served as the Chief Executive Officer and Founding Board Member of Overstock.com, a nearly $1 billion a year online enterprise which he founded in 1997, as D2: Discounts Direct. Brazell has been the owner of several Internet properties, including eHow.com, a content and search site; Delphi Forums, the first online discussion group community; and Gamebase International, Inc, a project to develop the world's first jurisdictionally-compliant, secure gaming system and platform for interactive gaming. Robert Brazell has raised and invested more than $200 million in the past ten years. He is the co-author of ""The Idea Economy"" (1995) in which he argues that the most needed innovation is innovation itself. Brazell served on the board of the Deseret Foundation, dedicating two years to help establish an organization that pioneered ""entrepreneurial approach"" to medical charity by establishing self-sufficient infrastructure in over a dozen countries to provide predictable surgical care to children. Rob is the Founder of Medical+Intelligence™, a big data, technology, and education company providing unprecedented prevention, diagnostic, and treatment opportunities to primary care physicians and their patients across the United States. "</span>
 
 - name: Spencer
   headshot: spencer.jpg
@@ -86,9 +109,12 @@
     - google.jpg
     - paypal.jpg
     - uber.jpg
-  info: |-
+  bio:
+    short: |-
+      As an attourney Spencer has worked on executive teams across legal, technology, and real estate enterprises, which has given him a broad experience base, which he leverages to help develop strong, collaborative teams across domestic and international projects. Don't take yourself too seriously, but <span class="red">be serious about it.</span>
 
-    I am a licensed lawyer, but I've worked on executive teams across legal, technology, and real estate enterprises.  I have broad experience executing on strategic initiatives and developing strong, collaborative teams across domestic and international projects.  Don't take yourself too seriously, but be serious about it.
+    long: |-
+      I am a licensed lawyer, but I've worked on executive teams across legal, technology, and real estate enterprises.  I have broad experience executing on strategic initiatives and developing strong, collaborative teams across domestic and international projects.  Don't take yourself too seriously, but be serious about it.
 
 - name: Jake
   headshot: Jake.jpg
@@ -100,18 +126,26 @@
     - morganstanley.jpg
     - snowbird.jpg
     - lhm.jpg
-  info: |-
-
-    A mixture of creative, innovative, goofy, and business savvy. Jake was born and raised in Utah. He enjoys challenging questions and deep philosophical discussions.
+  bio:
+    short: |-
+      A mixture of creative, innovative, goofy, and business savvy. Jake was born and raised in Utah. He enjoys challenging questions and deep philosophical discussions.
+    long: |-
+      x
 
 - name: Brandon
   headshot: brandon.jpg
+  linkedin: https://www.linkedin.com/in/gillespieb/
   influence-logos:
     - divvy.png
     - kuali.png
     - freebsd.png
-    - iomega.png
+    - utahstate.jpg
+    - pandim.png
+    - bebe.png
     - usaf.png
-  info: |-
-
-    Software Engineer. Family of 5, loves the outdoors, games, writing, and the challenges of software architecture.
+    - iomega.png
+  bio:
+    short: |-
+      Technology Innovator and Architect. Family of 5, loves the outdoors, games, writing, and the challenges of software architecture. Blog at <a href="https://surfingthe.cloud/">Surfing the Cloud</a>.
+    long: |-
+      x

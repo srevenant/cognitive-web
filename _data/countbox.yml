@@ -13,3 +13,7 @@ team:
   - counter: 7500
     icon: fas fa-shield-alt fa-2x
     text: Millions Protected
+  - counter: 124
+    text: Startups Funded
+  - counter: 3431
+    text: People in companies helped through our efforts

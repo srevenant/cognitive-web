@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# use the tachyons generator to change a few things
+# https://github.com/tachyons-css/generator
+
+curl -X POST \
+     -H "Content-Type: application/json" \
+     -d @tachyons-config.json \
+     https://tachyons.pub
+
