@@ -50,11 +50,15 @@ features:
 <div class="mt3">
   <div class="tc">
     <h1>The Faces Behind Cognitive</h1>
+    <div class="ph1-ns ph4-m ph6-l mb3">
+    Our team brings a vast array of expertise to our customers.  We have
+    highlighted some of the places they have worked for, influenced, or mentored.
+    </div>
   </div>
 </div>
 <div class="flex flex-wrap justify-center mh3 mh4-m mh5-l mb3 mb4-m mb5-l">
-  {% assign teamlist = site.data.team | sort: 'name' %}
   {% assign teamlist = site.data.team | shuffle %}
+  {% assign teamlist = site.data.team | sort: 'name' %}
   {% for mbr in teamlist %}
   <!-- linked in link -->
     <div class="member-outer flex flex-column">

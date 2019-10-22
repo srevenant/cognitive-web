@@ -1,10 +1,13 @@
-<!-- script src="//cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script
--->
-<script src="/js/parallax.min.js"></script>
+<!-- script src="/js/parallax.min.js"></script -->
+<script src="//cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+<!--
 <script language="Javascript">
+  startParallax(label) {
+    var scene = document.getElementById(label)
+    var parallaxInstance = new Parallax(scene)
+  }
   $(document).ready(function(){
-    let scene = $('#parallax-panel').get(0)
-    console.log(scene)
-    var parallaxInstance = new Parallax(scene);
-  });
+    startParallax('scene')
+  })
 </script>
+-->

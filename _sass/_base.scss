@@ -4,10 +4,10 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: black;
+  // background-color: black;
   font-size: 1.2rem;
   font-family: 'Raleway', sans-serif;
-  color: $body-text;
+  // color: $body-text;
   font-weight: 300;
 }
 // for header image
@@ -264,90 +264,6 @@ footer {
     animation: grow-shrink 30s ease-in-out infinite;
   }
 }
-
-// background images for autoscroller
-.bg-img-footer {
-  background: url("/img/bg-gray.webp") no-repeat bottom; // center fixed;
-  background-size: cover;
-}
-.bg-img-we-started {
-  @include mq-lg {
-  background: url("/img/westarted.jpg");
-  background-position: 50% 94px;
-  width: 100%;
-  display: block;
-  position: relative;
-  overflow: visible;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-color: #fff;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  padding: 100px 0;
-  }
-}
-.bg-img-nightsky {
-  background: url("/img/nightsky.jpg") no-repeat center;
-  background-size: cover;
-}
-.bg-img-team {
-  background: url("/img/team.jpg") no-repeat center;
-  background-size: cover;
-}
-.bg-img-services {
-  background: url("/img/services.jpg") no-repeat center;
-  background-size: cover;
-}
-.bg-img-innovation {
-  background: url("/img/computerguy2.jpg") no-repeat center;
-  background-size: cover;
-}
-a.jumptarget::before {
-  display: block;
-  content: " ";
-  margin-top: -75px; // Set the Appropriate Height
-  height: 75px; // Set the Appropriate Height
-  visibility: hidden;
-}
-// #faqs {
-//   .question {
-//     padding: $spacer-1;
-//     @include mq-sm {
-//       padding: $spacer-1 $spacer-2 $spacer-1 $spacer-2;
-//     }
-//     @include mq-lg {
-//       padding: $spacer-2 $spacer-3 $spacer-2 $spacer-3;
-//     }
-//     display: block;
-//     font-weight: 400;
-//     font-size: 14pt;
-//   }
-//   .card {
-//     border: none;
-//     background-color: transparent;
-//   }
-//   .card-header {
-//     border-bottom: solid thin $neutral-darker;
-//     background-color: transparent;
-//   }
-//   .faq-header {
-//     margin: 0;
-//     padding: 0;
-//   }
-//   .faq-header:hover > a.question {
-//   }
-//   .faq-header:hover {
-//     background-color: $neutral-darker;
-//   }
-// }
 .job-listing {
   .job-title {
     font-weight: 400;
