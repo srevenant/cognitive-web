@@ -1,0 +1,47 @@
+{% assign inline = YES %}
+{% for event in events | sort: 'sortby' %}
+
+{% if event.disabled %}
+{% continue %}
+{% endif %}
+
+{% if event.datetime %}
+{% capture event-time-seconds %}{{ event.datetime | date: '%s' }}{% endcapture %}
+{% capture event-time %}{{ event-time-seconds | divided_by: 86400 }}{% endcapture %}
+{% capture now-unix-seconds %}{{'now' | date: '%s' }}{% endcapture %}
+{% capture now-unix %}{{ now-unix-seconds | divided_by: 86400 }}{% endcapture %}
+{% if now-unix > event-time %}
+{% continue %}
+{% endif %}
+{% endif %}
+
+<ev-item>
+<ev-head>
+<ev-title><a href="{{ event.url }}">{{ event.title }}</a></ev-title>
+{% if event.subtitle %}
+<ev-subtitle><a href="{{ event.url }}">{{ event.subtitle }}</a></ev-subtitle>
+{% endif %}
+{% if event.when %}
+<ev-header><b>When:</b> {{ event.when }}</ev-header>
+{% else if event.datetime %}
+<ev-header><b>When:</b> {{ event.datetime }}</ev-header>
+{% endif %}
+{% if event.admission %}
+<ev-header><b>Admission:</b>  {{ event.admission }}
+  {% if event.registration %}
+   <a href="{{ event.registration }}" class="btn btn-small btn-outline-primary btn-p300">Register</a>
+  {% endif %}
+</ev-header>
+{% endif %}
+{% if event.location.name %}
+<ev-header>
+<b>Where:</b> <a href="{{ event.url }}">{{ event.location.name }}</a>
+</ev-header>
+{% endif %}
+</ev-head>
+<ev-body>
+{{ event.excerpt }}
+</ev-body>
+</ev-item>
+{% endfor %}
+{% assign inline = FALSE %}

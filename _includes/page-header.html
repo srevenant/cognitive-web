@@ -1,0 +1,20 @@
+<header class="top-section-fix cover" style="background-image: url({{ page.header.image.path }})">
+  <div class="top-section-fix bg-black-50">
+{% comment %}
+<header class="top-section-fix vh-50 overflow-hidden">
+  <img src="{{ page.header.image.path }}" class="img-pulse bg-black-50" />
+{% endcomment %}
+  <div class="pb3 pb3-m pb5-l">
+    <div class="tc mt3 mt5-m mt6-l ph3">
+      <h1 class="fw3 f2 f1-l fw2 white-90 mb0 lh-title" style="text-shadow: 2px 2px 4px 2px rgba(0,0,0,.2)">{{ page.title }}</h1>
+      {% if page.subtitle %}
+      <h2 class="fw2 f3 white-80 mt3 mb4">{{ page.subtitle }}</h2>
+      {% endif %}
+      {% comment %}
+      <a class="f6 no-underline grow dib v-mid bg-blue white ba b--blue ph3 pv2 mb3" href="/">Call to Action</a>
+      <span class="dib v-mid ph3 white-70 mb3">or</span>
+      <a class="f6 no-underline grow dib v-mid white ba b--white ph3 pv2 mb3" href="">Secondary call to action</a>
+      {% endcomment %}
+    </div>
+  </div>
+</header>

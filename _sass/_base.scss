@@ -4,7 +4,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  // background-color: black;
+  background-color: black;
   font-size: 1.2rem;
   font-family: 'Raleway', sans-serif;
   // color: $body-text;
@@ -112,11 +112,14 @@ footer.parallax-window {
   border: none;
   color: white;
 }
-.light-tint, .light-tint50 {
-  background-color: rgba(255,255,255,0.5);
-  color: $body-text;
+.light-tint50 {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,.5);
 }
-.parallax-stripe .dark-tint .dark-tint80 .dark-tint50 {
+.parallax-stripe {
   padding-top: 2em;
   padding-bottom: 5em;
   margin: auto;
@@ -125,13 +128,11 @@ footer.parallax-window {
   margin: auto;
   padding: 0;
 }
-.dark-tint, .dark-tint80 {
-  background-color: rgba(0,0,0, .8);
-  margin: 0;
-}
 .dark-tint50 {
-  background-color: rgba(0,0,0, .5);
-  margin: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.5);
 }
 h1, h2, h3, h4, h5 {
   font-weight: 200;
@@ -149,12 +150,12 @@ h1, h2, h3, h4, h5 {
 
 // links
 a {
-  color: $primary-light;
+  color: $accent-color;
 }
 a:hover,
 a:active {
   text-decoration: none;
-  color: $primary-lighter;
+  color: $primary-600;
 }
 /*
 // Button Styles
@@ -238,6 +239,21 @@ main {
   margin-bottom: 300px;
   z-index: +1;
 }
+header {
+  position: relative;
+  width: 100%;
+  z-index: -1;
+  .img-pulse {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+    animation: grow-shrink 30s ease-in-out infinite;
+  }
+}
 footer {
   min-height: 300px;
   right: 0;
@@ -253,15 +269,21 @@ footer {
   a {
     color: white;
   }
-  .bg-grow-shrink {
+  .img-pulse {
     position: absolute;
     bottom: 0;
     left: 0;
-    height: auto;
-    width: 100%;
     overflow: hidden;
     z-index: -1;
     animation: grow-shrink 30s ease-in-out infinite;
+
+    object-fit: cover;
+    height: 100%;
+    width: auto;
+    @media screen and (orientation: landscape) {
+      height: auto;
+      width: 100%;
+    }
   }
 }
 .job-listing {
@@ -313,4 +335,7 @@ footer {
 }
 .color-primary {
   color: $primary-color;
+}
+.top-section-fix {
+  border: solid 1px transparent; // not sure why, but top sections without a border have a large white space above them
 }

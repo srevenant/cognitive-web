@@ -1,40 +1,39 @@
 {% include contact.html %}
 <footer>
-  <img src="/img/bg-footer.webp" class="bg-grow-shrink">
-  <div class="container">
-    <div class="d-flex flex-row justify-content-end">
-      <div class="p-1 align-self-end"></div>
-      <div>
-        <div class="p-1 d-flex flex-row text-right py-1 py-sm-2 py-md-4 justify-content-end">
-          <div class="p-1 text-right align-self-end">
-            <a href="#modal-contact-us" data-toggle="modal">
-              <i class="fas fa-envelope fa-2x px-2"></i>
-            </a>
-            {% if site.connect.email %}
-            <a href="mailto:{{ site.connect.email }}">
-              <i class="fas fa-at fa-2x px-2"></i>
-            </a>
-            {% endif %}
-            {% if site.connect.linkedin %}
-            <a href="https://www.linkedin.com/company/{{ site.connect.linkedin }}">
-              <i class="fab fa-linkedin fa-2x px-2"></i>
-            </a>
-            {% endif %}
-            {% if site.connect.github %}
-            <a href="https://github.com/{{ site.connect.github }}">
-              <i class="fab fa-github fa-2x px-2"></i>
-            </a>
-            {% endif %}
-            <div class="text-center">
-              <i class="fas fa-map-marker-alt"></i>&nbsp; Salt Lake City, UT
-            </div>
+  <img src="/img/bg-footer.webp" class="img-pulse">
+  <!-- div class="d-flex flex-row justify-content-end" -->
+  <div class="flex justify-end mr2 mr4-m mr6-l">
+    <div class="p-1 align-self-end"></div>
+    <div>
+      <div class="p-1 d-flex flex-row text-right py-1 py-sm-2 py-md-4 justify-content-end">
+        <div class="p-1 text-right align-self-end">
+          <a href="#modal-contact-us" data-toggle="modal">
+            <i class="fas fa-envelope fa-2x px-2"></i>
+          </a>
+          {% if site.connect.email %}
+          <a href="mailto:{{ site.connect.email }}">
+            <i class="fas fa-at fa-2x px-2"></i>
+          </a>
+          {% endif %}
+          {% if site.connect.linkedin %}
+          <a href="https://www.linkedin.com/company/{{ site.connect.linkedin }}">
+            <i class="fab fa-linkedin fa-2x px-2"></i>
+          </a>
+          {% endif %}
+          {% if site.connect.github %}
+          <a href="https://github.com/{{ site.connect.github }}">
+            <i class="fab fa-github fa-2x px-2"></i>
+          </a>
+          {% endif %}
+          <div class="text-center">
+            <i class="fas fa-map-marker-alt"></i>&nbsp; Salt Lake City, UT
           </div>
         </div>
-        <div class="p-1 text-right align-self-end ">
-          <div class="p-1 small text-right" style="font-weight: 200">
-            &copy; Copyright 20{{ site.time | date: '%y' }} Cognitive
-            <p><a href="/terms/" style="color: #fff">Disclosure, Terms of Use, and Privacy Policy</a>
-          </div>
+      </div>
+      <div class="p-1 text-right align-self-end ">
+        <div class="p-1 small text-right" style="font-weight: 200">
+          &copy; Copyright 20{{ site.time | date: '%y' }} Cognitive
+          <p><a href="/terms/" style="color: #fff">Disclosure, Terms of Use, and Privacy Policy</a>
         </div>
       </div>
     </div>

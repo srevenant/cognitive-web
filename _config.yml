@@ -22,9 +22,9 @@ sass:
 
 # Collections
 collections:
-  team:
-    output: false
-  jobs:
+  events:
+    output: true
+  schedule:
     output: true
 
 defaults:

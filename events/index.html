@@ -1,0 +1,36 @@
+---
+layout: default
+title: Upcoming Activities and Events!
+header:
+  image:
+    path: /img/events.jpg
+---
+
+{% include page-header.html %}
+
+<section class="mh2 mh5-l mv2 mv4-l">
+{% comment %}
+TODO: convert this to tachyons
+{% endcomment %}
+<div class="row mx-0 px-0 mx-sm-0 px-sm-6">
+<div class="col-md events-upcoming mx-0 mx-sm-0 px-0 px-sm-2 px-lg-4">
+
+<h2>Upcoming Events</h2>
+
+<event-list>
+{% assign events = site.schedule | sort: 'sortby' %}
+{% include events-inline.html %}
+</event-list>
+</div>
+<div class="col-md events-ongoing mx-0 mx-sm-0 px-0 px-sm-2 px-lg-4">
+
+<h2>Recurring Events</h2>
+
+<event-list>
+{% assign events = site.events | sort: 'event-start-date' %}
+{% include events-inline.html %}
+</event-list>
+
+</div>
+</div>
+</section>
