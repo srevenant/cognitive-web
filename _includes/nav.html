@@ -17,15 +17,16 @@
     <div class="navbar-nav">
       <div class="nav-item nav-menu-col " id="nav-menu-col1">
         <div class="nav-menu-header">
-        <a class="nav-link" href="/learn/">
-          Learn More
+        <a class="nav-link" href="#purpose">
+          Our Purpose
         </a>
         </div>
         <div class="nav-menu-sub" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="/team/">About Us</a>
-          <a class="dropdown-item" href="/learn/#OurMission">Our Mission</a>
-          <a class="dropdown-item" href="/learn/#Skills">Mentorship</a>
-          <a class="dropdown-item" href="/learn/#FAQs">FAQs</a>
+          {% for topic in site.data.home-topics %}
+          {% if topic.navname %}
+          <a class="dropdown-item" href="#{{ topic.linkto }}">{{ topic.navname }}</a>
+          {% endif %}
+          {% endfor %}
         </div>
       </div>
       <div class="nav-item nav-menu-col " id="nav-menu-col2">

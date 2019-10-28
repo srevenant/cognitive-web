@@ -1,0 +1,46 @@
+<div class="flex-l mt3">
+  <div class="mr2 w-40-l">
+    <p>Design Thinking is a solution-focused process that models the efficient ways
+    designers and architects work through some of the most challenging problems.
+    This is different from problem-focused design, where a fix is decided prior
+    to understanding the real problem.
+
+    <p>User Experience Design (UX) and Design Thinking work together.  UX is about
+    understanding how you and your company interacts with the world around it,
+    focusing on Empathy and understanding a person or user's needs.
+
+    <p>Design Thinking is an iterative process, where we revisit each step only
+    as much as is required to help us focus on finding your needed solution as
+    fast as possible.  It begins by <b>Empathizing</b> with your needs,
+    followed by a cycle of <b>Creativity</b> where we work with your team to
+    identify options, and concluding with <b>Rationality</b> as we help you
+    choose, implement, and then learn.
+
+    <div>
+      Continued Learning on Design Thinking and UX:
+      <ul>
+        <li><a href="https://amzn.to/2pUC080">Change by Design</a>, Tim Brown</li>
+        <li><a href="https://dschool.stanford.edu/resources/dschool-reading-list">Stanford's d.school Reading List</a></li>
+        <li><a href="https://amzn.to/2qNdCWz">Activator: Success in Technology with Design Thinking</a>, Brandon Gillespie</li>
+        <li><a href="https://amzn.to/2pVPfFO">About Face: The Essentials of Interaction Design</a>, Alan Cooper</li>
+      </ul>
+    </div>
+  </div>
+  <div class="timeline ml2 w-75-l ml3-l mt3 mt0-l">
+    <div id="timeline">
+    {% for phase in site.data.designthinking %}
+      <div class="timeline-item">
+        <div class="timeline-icon flex items-center justify-center white f3 bg-{{ phase.color }} ma0">
+          {{ phase.svg }}
+        </div>
+        <div class="timeline-content">
+          <div class="header white bg-{{ phase.color }} fw6">{{ phase.title }}</div>
+          <div class="body mb3 bg-near-white pa3 f5">
+            {{ phase.info }}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+    </div>
+  </div>
+</div>

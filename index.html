@@ -86,34 +86,69 @@ features:
     </div>
   </div>
 </div>
-<div class="flex-l items-center-l ba b--blue">
-  <div class="mt4 ph0 w-50-l parallax-window ba b--black" data-parallax="scroll" data-image-src="/img/over.jpg" style="height: 600px" data-z-index="50000">
+{% comment %}
+ % parallax is not working (grr) -- might be conflicting styles w/all the css %
+<div class="flex-l items-center-l mv4">
+  <div class="ph0 w-50-l parallax-window" data-parallax="scroll" data-image-src="/img/over.jpg" style="height: 600px" data-z-index="50000">
     &nbsp;
   </div>
-  <div class="pv5-ns ph5-m ph6-l mr1 mr2-m mr4-l w-50-l">
-    <div class="tc">
-      <h1 class="f3 f2-l fw6 mb0 tc">Executive Services<br/>
-      <!--For Business Ventures of Any Size -->
-    </h1>
-    </div>
-    <div class="tc">
-    Our industry seasoned team has expertise across many industries and sectors.
-    Not every company needs a full-time C-Suite, and we are available to fill-in
-    where you need executive assistance.
-    <p/>
+{% endcomment %}
 
-      <!--
-      Strategic insights driving business impact.
-      <p/>
-      Cognitive is a strategic advisory and staffing firm serving those charged with developing internal Innovation and Digital Transformation Programs needed to compete in today's global, knowledge-based economy.
-      <p/>
-      We differentiate ourselves based on our unique scientometric approach to research, strategy development, and tactical implementation to helps our clients create and maintain an innovation-based competitive and economic advantage.
-      -->
-      <div class="pt-2 tc">
-        <a href="/info/" class="myb myb-outline myb-rounded myb-large">
-        Learn More! &nbsp; <i class="fas fa-play"></i>
+{% assign iter = 1 %}
+{% for topic in site.data.home-topics %}
+<a name="{{ topic.linkto }}"></a>
+{% assign mod = iter | modulo: 2 %}
+{% if mod == 0 %}
+{% assign reverse = "flex-row-reverse" %}
+{% else %}
+{% assign reverse = "" %}
+{% endif %}
+{% assign iter = iter | plus: 1 %}
+<div class="home-topic flex-l items-center-l mv4 {{reverse}}" id="topic-expand{{iter}}">
+  <div class="ph0 w-50-l image overflow-hidden" {{ topic.image.frame-attr }}>
+    <img src="{{ topic.image.file }}" {{ topic.image.img-attr }}>
+  </div>
+  <div class="summary pb5-ns ph3 ph5-l w-50-l">
+    <div class="tl">
+      <h1 class="f3 f2-l fw6 mb0 tc"><i class="fas fa-{{topic.icon }} ph3"></i> {{ topic.heading }}</h1>
+    </div>
+    <div class="tl">
+      {{ topic.summary }}
+      {% if topic.more %}
+      <div class="pt4 tc">
+        <a href="javascript:expandTopic('#topic-expand{{iter}}')" class="w-100 db">
+          <div class="br-100 ba dib" style="height: 30px; width: 30px"><i class="fas fa-plus"></i></div>
+          Learn More! &nbsp;
         </a>
       </div>
+      {% endif %}
     </div>
   </div>
+  {% if topic.more %}
+  <div class="detail hidden">
+    <div class="ph6-l ph5">
+      <div class="tc">
+        <h1 class="f3 f2-l fw6 mb0 tc"><i class="fas fa-{{topic.icon }} ph3"></i> {{ topic.heading }}</h1>
+      </div>
+      {% if topic.more.file %}
+      {% include {{topic.more.file}} %}
+      {% else %}
+      {{ topic.more }}
+      {% endif %}
+    </div>
+    <a href="javascript:shrinkTopic('#topic-expand{{iter}}')" class="closebar flex items-center justify-center db pv3 mv2">
+      <i class="fas fa-times ph2"></i>
+      Less Info
+    </a>
+  </div>
+  {% endif %}
 </div>
+{% endfor %}
+<script language="Javascript">
+  function expandTopic(idkey) {
+    $(idkey).addClass("expanded")
+  }
+  function shrinkTopic(idkey) {
+    $(idkey).removeClass("expanded")
+  }
+</script>

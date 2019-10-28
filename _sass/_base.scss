@@ -190,8 +190,6 @@ a:active {
   box-shadow: none;
 }
 */
-
-
 ///
 .shadowbox {
   // padding: $spacer-1;
@@ -221,7 +219,6 @@ a:active {
 .service-box {
   color: $primary-color;
 }
-
 #example-code {
   .modal-body {
     padding: 0;
@@ -229,7 +226,6 @@ a:active {
     overflow-y: auto;
   }
 }
-
 main {
   overflow: hidden;
   position: relative;
@@ -286,6 +282,38 @@ footer {
     }
   }
 }
+.portrait-media-fit {
+  height: 100%;
+  width: auto;
+  /*
+  @media screen and (orientation: landscape) {
+    height: auto;
+    width: 100%;
+  }
+  */
+  /*
+  @media screen and (max-width: 30rem) {
+    height: auto;
+    width: 100%;
+  }
+  */
+}
+.landscape-media-fit {
+  height: 100%;
+  width: auto;
+  /*
+  @media screen and (orientation: landscape) {
+    height: auto;
+    width: 100%;
+  }
+  */
+  /*
+  @media screen and (max-width: 30rem) {
+    height: auto;
+    width: 100%;
+  }
+  */
+}
 .job-listing {
   .job-title {
     font-weight: 400;
@@ -328,6 +356,14 @@ footer {
       color: white;
     }
   }
+  &.myb-hollow {
+    @include button-variant(white, white, $primary-color, white, $primary-dark, white); // $primary-dark, $primary-dark);
+    // border: solid 1px $primary-color;
+    color: $primary-color;
+    &:hover, &:active, &:focus {
+      color: white;
+    }
+  }
 }
 .color-invert {
   background-color: $primary-dark;
@@ -338,4 +374,59 @@ footer {
 }
 .top-section-fix {
   border: solid 1px transparent; // not sure why, but top sections without a border have a large white space above them
+}
+
+.home-topic {
+  transition: all 1s ease;
+  &.expanded {
+    flex-direction: column !important;
+    transition: all 1s ease;
+    .image {
+      width: 100%;
+      height: auto;
+      transition: width 1s ease;
+    }
+    .summary {
+      height: 0;
+      transition: height 1s ease;
+      display: none;
+    }
+    .detail {
+      height: 100%;
+      width: 100%;
+      transition: height 1s ease;
+      display: block;
+    }
+  }
+  .image {
+    transition: width 1s ease;
+  }
+  .closebar {
+    // height: 3rem;
+    width: 100%;
+    background-color: rgba(0,0,0,.1);
+    text-align: center;
+  }
+  /*
+  .close-x {
+    width: 3rem;
+    height: 3rem;
+    border: solid 2px gray;
+    border-radius: 10rem;
+    background: white;
+    position: fixed;
+    top: 3rem;
+    right: 3rem;
+  }
+  */
+  .summary {
+    height: 100%;
+    display: block;
+    transition: height 1s ease;
+  }
+  .detail {
+    transition: height 1s ease;
+    height: 0;
+    display: none;
+  }
 }

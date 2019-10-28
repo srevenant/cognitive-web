@@ -17,7 +17,7 @@ cd _site || {
     echo "Cannot CD to _site?"
     exit 1
 }
-~/git/protos/fingerprint.py .
+#~/git/protos/fingerprint.py .
 
 export WEB_DOMAIN_BUCKET=cognitive.cold.org
 

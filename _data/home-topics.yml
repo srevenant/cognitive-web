@@ -1,0 +1,116 @@
+- heading: Our Purpose
+  image:
+    file: /img/purpose.jpg
+    # img-attr: 'class="w-100"' # portrait-media-fit" style="margin-top: -100px;"'
+    img-attr: 'class="w-100 h-auto" style="margin-top: -100px"' # landscape-media-fit"'
+    frame-attr: 'style="max-height: 50vh;"'
+  icon: check-circle
+  linkto: purpose
+  summary: |-
+    <p/>
+    We help businesses better understand the challenges they face, and
+    work with you to identify the powerful options that can lead you to success!
+    Our success is based on your success.
+    <p/>
+    We solve hard problems.  We are experts in many disciplines so you don't
+    have to be.
+
+- heading: Strategic Business Planning
+  navname: Strategy
+  image:
+    #file: /img/neural.jpg
+    file: /img/internet-3484137_1920.jpg
+    img-attr: 'class="w-100 h-auto"' # landscape-media-fit"'
+    frame-attr:
+  icon: expand-arrows-alt
+  linkto: stratplan
+  summary: |-
+    <p/>
+    Innovation Transformation is not a “nice to have” in today’s fast-paced,
+    global world, it’s a business imperative.
+    <p/>
+    Where do you want your business to be in 10 years?
+    <p/>
+    Whether it's negotiating through the challenges corporate innovation,
+    working through the challenges of technology change and data strategies,
+    or assisting you through a capital raise, our team can help.
+  more: |-
+    <p/>
+    Innovation Transformation is not a “nice to have” in today’s fast-paced,
+    global world, it’s a business imperative. A recent study shows that up to
+    50% of those companies on the S&P 500 list of companies will not be on
+    the list in just 10 years. In an unpredictable, global, business
+    environment, companies can’t rely on traditional corporate initiatives
+    to sustain and steer innovation.
+    <p/>
+    To reach a point of aimed to well-defined change companies need to
+    engage with transformative innovation programs to create sustainable
+    corporate cultural changes needed to fuel and sustain corporate
+    innovation growth. Implementation of Machine Learning and Artificial
+    Intelligence has far-reaching implications for companies of all sizes
+    and in every business segment.
+    <p/>
+    Cognitive provides expert consulting, advice and staffing solutions
+    for companies engaged in digital transformation initiatives.
+- heading: Executive Services
+  navname: Services
+  image:
+    file: /img/business-3152586_1920.jpg
+    img-attr: 'class="w-100 h-auto"' # landscape-media-fit"'
+    # img-attr: 'class="portrait-media-fit"'
+    # frame-attr: 'style="max-height: 75vh"'
+  icon: handshake
+  linkto: execsvc
+  summary: |-
+    Our industry seasoned team has expertise across many industries and sectors.
+    Not every company needs a full-time C-Suite, and we are available to
+    fill-in where you need executive assistance.
+  more: |-
+    <p/>
+    Our industry seasoned team has expertise across many industries and sectors.
+    Just as you don't necessarily need a full time attourney, not every company
+    needs a full-time C-Suite. We are available to fill-in where you need
+    executive assistance, including:
+    <ul>
+    <li><b>CEO and Operations</b> - We can help you build powerful business and operations strategies</li>
+    <li><b>CLO</b> - We can connect you to attourneys who can help you through your unique challenges</li>
+    <li><b>CFO and Accounting</b> - Financial models</li>
+    <li><b>CTO</b> - Software Engineering and Technology Architecture</li>
+    <li><b>CXO</b> - Product Science, UX, and Engineering</li>
+    <li><b>CISO and Compliance</b> - Security is fast becoming a critical issue in any organization</li>
+    <li><b>HR</b> - talent recruitment</li>
+    </ul>
+    <p/>
+
+- heading: Executive Networking Events
+  navname: Events
+  image:
+    file: /img/meetup.jpg
+    img-attr: 'class="w-100 h-auto"' # landscape-media-fit"'
+    #img-attr: 'class="landscape-media-fit"'
+  linkto: execevent
+  icon: calendar-check
+  summary: |-
+    Bringing your business to success often involves connecting with other
+    people at the executive level. We offer curated events which can connect
+    you with those most able to help you, and we can help you build out your
+    own event to help develop your business.
+  more: |-
+    not yet
+- heading: Design Thinking and UX
+  navname: Design&nbsp;Thinking
+  image:
+    file: /img/green.jpg # light-bulbs-1125016_1920.jpg # design.jpg
+    img-attr: 'class="w-100 h-auto"' # landscape-media-fit"'
+    #img-attr: 'class="landscape-media-fit"'
+  linkto: design
+  icon: drafting-compass
+  summary: |-
+    The human-centered cycle of Design Thinking can lead to amazingly creative
+    solutions, which is why we use this pattern in our interactions with you.
+    This puts understanding your needs before choosing a solution, and from
+    that you can feel confident selecting the most powerful options going
+    forward.
+
+  more:
+    file: topic-designthinking-detail.html

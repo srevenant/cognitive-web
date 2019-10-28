@@ -1,18 +1,17 @@
 team:
   cols: 2
   data:
-  - counter: 1200
+  - counter: 200
     icon: fas fa-highlighter fa-2x
-    text: Whiteboard Markers
-  - counter: 2000
+    text: Years of Business Experience
+  - counter: 500
+    icon: fas fa-highlighter fa-2x
+    text: Millions Raised
+  - counter: 90
     icon: fas fa-database fa-2x
-    text: Different Databases
-  - counter: 15000
-    icon: fas fa-wine-bottle fa-2x
-    text: Gallons of Soft Drink
-  - counter: 7500
-    icon: fas fa-shield-alt fa-2x
-    text: Millions Protected
+    text: Bags of Trail Mix
+  - counter: 98
+    text: Industries Worked
   - counter: 124
     text: Startups Funded
   - counter: 3431

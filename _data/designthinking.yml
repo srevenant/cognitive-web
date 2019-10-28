@@ -1,0 +1,46 @@
+- title: EMPATHY
+  svg: '<i class="fas fa-hands-helping"></i>'
+  color: blue
+  info: |-
+    We work with you to explore and discover what
+    challenges you are facing today. Together we learn
+    how your systems operate, <b>Research</b> options,
+    and <b>Define</b> what your core needs are.<b>Results</b>
+    <ul class="fa-ul">
+    <li><span class="fa-li"><i class="fas fa-angle-double-right"></i></span>
+      A clearly defined understanding of what your
+    needs are, and some ways that might work to address things as we move
+    into the CREATIVITY part of the cycle.
+    </li>
+    <li><span class="fa-li"><i class="fas fa-angle-double-right"></i></span>
+    Designs and Definitions around
+    what you are doing today, and possible directions going forward.
+    </li>
+    </ul>
+- title: CREATIVITY
+  svg: '<i class="fas fa-lightbulb"></i>'
+  color: purple
+  info: |-
+    We work with your teams to explore and clarify way's to resolve your
+    problem.  During this time we <b>Ideate</b> on what is possible, while also
+    <b>Prototype</b> possibilities only as much as is needed to help inform the
+    next phase. <b>Results</b>
+    <ul class="fa-ul">
+    <li><span class="fa-li"><i class="fas fa-angle-double-right"></i></span>
+    We should be ready to Choose, starting the first step of RATIONALITY and building your solution.
+    </ul>
+- title: RATIONALITY
+  svg: '<i class="fas fa-star"></i>'
+  color: yellow
+  info: |-
+    The last phase of Design Thinking is to build.  We first
+    work with you to <b>Choose</b> the most powerful solution meeting your
+    needs, then we <b>Implement</b> with your teams, followed by
+    <b>Learning</b> as we look back and consider ways to improve
+    our process.
+    <b>Results</b>
+    <ul class="fa-ul">
+    <li><span class="fa-li"><i class="fas fa-angle-double-right"></i></span>
+     Your solution is operational at the end of this phase, and we are
+     looking into other ways to help!
+    </ul>
