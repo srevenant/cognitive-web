@@ -1,28 +1,28 @@
-$timeline-color: $primary-color;
+$portfolio-color: $primary-color;
+//
+// %clearfix {
+// 	&:after, &:before {
+// 		content: '';
+// 		display: block;
+// 		width: 100%;
+// 		clear: both;
+// 	}
+// }
+//
+// @mixin prefix($prop, $val) {
+// 	@each $prefix in '-webkit-', '-moz-', '-ms-', '' {
+// 		#{$prefix}#{$prop}: $val;
+// 	}
+// }
+//
+// .portfolio-left {
+// 	padding-right: auto;
+//   @media screen and (min-width: 30rem) {
+// 	  padding-right: 30px;
+// 	}
+// }
 
-%clearfix {
-	&:after, &:before {
-		content: '';
-		display: block;
-		width: 100%;
-		clear: both;
-	}
-}
-
-@mixin prefix($prop, $val) {
-	@each $prefix in '-webkit-', '-moz-', '-ms-', '' {
-		#{$prefix}#{$prop}: $val;
-	}
-}
-
-.timeline-left {
-	padding-right: auto;
-  @media screen and (min-width: 30rem) {
-	  padding-right: 30px;
-	}
-}
-
-#timeline {
+#portfolio {
 	width: 100%;
 	position: relative;
 	@include prefix(transition, all .4s ease);
@@ -32,7 +32,7 @@ $timeline-color: $primary-color;
 		display: table;
 		width: 100%;
 	}
-	.timeline-item {
+	.portfolio-item {
 		&:not(:last-child) {
 			&::before {
 				content:"";
@@ -43,8 +43,7 @@ $timeline-color: $primary-color;
 			}
 		}
 		position: relative;
-		@extend %clearfix;
-		.timeline-icon {
+		.portfolio-icon {
 			width: 50px;
 			height: 50px;
 			position: absolute;
@@ -61,7 +60,7 @@ $timeline-color: $primary-color;
 				left: 14px;
 			}
 		}
-		.timeline-content {
+		.portfolio-content {
 			border: solid 1px transparent; // wierd spacing without border
 			margin-left: 40px;
 			background: #fff;

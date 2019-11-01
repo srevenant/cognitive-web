@@ -7,6 +7,7 @@ meta:
     height: 668
 features:
   testimonials: true
+  portfolio: true
   parallaxjs: true
 ---
 <div class="header-frame">
@@ -20,6 +21,11 @@ features:
     <source src="/vid/trees.1080.mp4" type="video/mp4" media="all" />
   </video>
 </div>
+<!-- // logo scroll
+Kognition, Intermodal Structures, Photopharmics, Goldman Sachs, Clarip
+
+-->
+
     <!-- y=" t6 w-100 mt7 pt4" -->
 <div class="header-overlay vh100">
   <div class="flex-l flex-m justify-center w-100 mt7">
@@ -29,14 +35,16 @@ features:
     </picture>
     <div class="tl-m tl-l ml4-m ml4-l"><!-- class="tc tl-m tl-l ml4-l ml4-m mt4 mt2-l mt2-m"-->
       <div class="f1 fw4 text-halo white ttu" style="font-family: 'Nanum Gothic'; font-weight: 700">Cognitive</div>
-      <div class="f4 fw4 text-halo white i" style="font-family: 'Nanum Gothic'; font-weight: 700">Your Partner for the Global Innovation Economy</div>
+      <div class="f4 fw4 text-halo white i" style="font-family: 'Nanum Gothic'; font-weight: 700">Your Capital Networking Partner</div>
     </div>
   </div>
   <div class="arrow-down self-end"><a href="#jump"><i class="fas fa-angle-double-down"></i></a></div>
 </div>
+<a name="jump"></a>
 <div class=" pa0 ma0">
-  <a name="jump"></a>
   <div class="mv0 mv5-l ph1 ph7-x ph4-l tl">
+    {% include portfolio.html %}
+    <!--
     <div class="flex-l justify-center-l">
       <div class="flex items-start justify-center pv4 w-50-l ">
         <div class="flex items-center justify-center ">
@@ -84,6 +92,8 @@ features:
         <div class="tail mt1 mt2-m mt2-l"></div>
       </div>
     </div>
+    -->
+
   </div>
 </div>
 {% comment %}

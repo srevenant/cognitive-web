@@ -1,0 +1,18 @@
+#
+# Image type is preferred as PNG or SVG.  If PNG, scale it to a 200px height
+#
+- name: Kognition
+  logo: /img/portfolio/kognition.svg
+  site: https://kognition.ai/
+- name: Intermodal Structures
+  logo: /img/portfolio/imod.png
+  site: https://imodstructures.com/
+- name: Photopharmics
+  logo: /img/portfolio/photopharmics.png
+  site: https://photopharmics.com/
+- name: Goldman Sachs
+  logo: /img/portfolio/goldmansachs.png
+  site: https://www.goldmansachs.com/
+- name: Clarip
+  logo: /img/portfolio/clarip.png
+  site: https://clarip.com/

@@ -7,13 +7,29 @@
   icon: check-circle
   linkto: purpose
   summary: |-
+    <div class="tc">
     <p/>
-    We help businesses better understand the challenges they face, and
-    work with you to identify the powerful options that can lead you to success!
+    We help you solve hard problems.
+    <!-- We bring a broad expertise to the table ... you don't have to be an expert in all things, just what you are best at -->
+    <p/>
     Our success is based on your success.
+    </div>
+
+- heading: Our Process
+  image:
+    file: /img/green.jpg # light-bulbs-1125016_1920.jpg # design.jpg
+    img-attr: 'class="w-100 h-auto"' # landscape-media-fit"'
+    #img-attr: 'class="landscape-media-fit"'
+  linkto: design
+  icon: drafting-compass
+  summary: |-
     <p/>
-    We solve hard problems.  We are experts in many disciplines so you don't
-    have to be.
+    We use a human-centered cycle starting with understanding your needs,
+    then moving foreward to creatively explore options and choose the most
+    powerful solution for your business.
+    <p/>
+  more:
+    file: topic-designthinking-detail.html
 
 - heading: Strategic Business Planning
   navname: Strategy
@@ -52,6 +68,7 @@
     <p/>
     Cognitive provides expert consulting, advice and staffing solutions
     for companies engaged in digital transformation initiatives.
+
 - heading: Executive Services
   navname: Services
   image:
@@ -97,20 +114,3 @@
     own event to help develop your business.
   more: |-
     not yet
-- heading: Design Thinking and UX
-  navname: Design&nbsp;Thinking
-  image:
-    file: /img/green.jpg # light-bulbs-1125016_1920.jpg # design.jpg
-    img-attr: 'class="w-100 h-auto"' # landscape-media-fit"'
-    #img-attr: 'class="landscape-media-fit"'
-  linkto: design
-  icon: drafting-compass
-  summary: |-
-    The human-centered cycle of Design Thinking can lead to amazingly creative
-    solutions, which is why we use this pattern in our interactions with you.
-    This puts understanding your needs before choosing a solution, and from
-    that you can feel confident selecting the most powerful options going
-    forward.
-
-  more:
-    file: topic-designthinking-detail.html
