@@ -21,12 +21,15 @@
   }
   .member-inner {
     img.member-pic {
-      border-radius: 20em;
-      border: solid $pic-border-size $primary-500;
       // display: block;
       // margin-left: auto;
       // margin-right: auto;
       width: $pic-width;
+      border-radius: 20em;
+    }
+    .member-wrap {
+      border-radius: 30em;
+      border: solid $pic-border-size $primary-500;
     }
     .member-bio {
       width: $member-width;

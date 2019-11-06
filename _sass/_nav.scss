@@ -63,9 +63,11 @@ a.btn-nav-outline:hover {
     height: 100%;
     overflow: visible;
   }
+  /*
   .nav-link, .nav-menu-sub {
     padding-left: 0;
   }
+  */
   .nav-menu-sub {
     .dropdown-item {
       color: $body-text-lighter;
@@ -75,6 +77,7 @@ a.btn-nav-outline:hover {
     height: 0;
     overflow: hidden;
   }
+  /*
   #nav-menu-col1:hover,
   #nav-menu-col2:hover,
   #nav-menu-col3:hover,
@@ -86,13 +89,22 @@ a.btn-nav-outline:hover {
   .nav-menu-col:hover > .nav-menu-header > a.nav-link {
     color: $primary-color !important;
   }
+  */
   .nav-menu-header {
-    padding-left: .5rem;
+    border-radius: 3em;
+    font-weight: 500 !important;
+    color: black;
+    &:hover {
+      color: $primary-color !important;
+      background-color: $info-900 !important;
+    }
+    // padding-left: .5rem;
+    /*
     .nav-link {
-      color: $body-text; // $info-light;
-      font-weight: 800 !important;
+  //    color: $body-text; // $info-light;
       font-size: .9rem;
     }
+    */
   }
   .nav-buttons-right {
     padding-top: 8px;

@@ -1,25 +1,33 @@
 - heading: Our Purpose
   image:
-    file: /img/purpose.jpg
-    # img-attr: 'class="w-100"' # portrait-media-fit" style="margin-top: -100px;"'
-    img-attr: 'class="w-100 h-auto" style="margin-top: -100px"' # landscape-media-fit"'
+    src: /img/purpose-576w.jpg
+    srcset: |-
+      /img/purpose-576w.jpg 576w,
+      /img/purpose-768w.jpg 768w,
+      /img/purpose-992w.jpg 992w,
+      /img/purpose-1200w.jpg 1200w
+    img-attr: 'class="w-100 h-auto"'
     frame-attr: 'style="max-height: 50vh;"'
   icon: check-circle
   linkto: purpose
   summary: |-
-    <div class="tc">
     <p/>
-    We help you solve hard problems.
-    <!-- We bring a broad expertise to the table ... you don't have to be an expert in all things, just what you are best at -->
+    We help you solve hard problems, and our success is based on your success.
     <p/>
-    Our success is based on your success.
-    </div>
+    Capital Networking is about identifying
+    within your company what is powerful, and helping you capitalize on that,
+    wheter it is through a raise, or connecting your business with those
+    others who can help you to success.
 
 - heading: Our Process
   image:
-    file: /img/green.jpg # light-bulbs-1125016_1920.jpg # design.jpg
-    img-attr: 'class="w-100 h-auto"' # landscape-media-fit"'
-    #img-attr: 'class="landscape-media-fit"'
+    src: /img/process-576w.jpg
+    srcset: |-
+      /img/process-576w.jpg 576w,
+      /img/process-768w.jpg 768w,
+      /img/process-992w.jpg 992w,
+      /img/process-1200w.jpg 1200w
+    img-attr: 'class="w-100 h-auto"'
   linkto: design
   icon: drafting-compass
   summary: |-
@@ -27,19 +35,25 @@
     We use a human-centered cycle starting with understanding your needs,
     then moving foreward to creatively explore options and choose the most
     powerful solution for your business.
-    <p/>
   more:
     file: topic-designthinking-detail.html
+
+- insert: testimonials.html
+  increment: true
 
 - heading: Strategic Business Planning
   navname: Strategy
   image:
-    #file: /img/neural.jpg
-    file: /img/internet-3484137_1920.jpg
-    img-attr: 'class="w-100 h-auto"' # landscape-media-fit"'
+    src: /img/internet-576w.jpg
+    srcset: |-
+      /img/internet-576w.jpg 576w,
+      /img/internet-768w.jpg 768w,
+      /img/internet-992w.jpg 992w,
+      /img/internet-1200w.jpg 1200w
+    img-attr: 'class="w-100 h-auto"'
     frame-attr:
   icon: expand-arrows-alt
-  linkto: stratplan
+  linkto: services
   summary: |-
     <p/>
     Innovation Transformation is not a “nice to have” in today’s fast-paced,
@@ -72,10 +86,13 @@
 - heading: Executive Services
   navname: Services
   image:
-    file: /img/business-3152586_1920.jpg
-    img-attr: 'class="w-100 h-auto"' # landscape-media-fit"'
-    # img-attr: 'class="portrait-media-fit"'
-    # frame-attr: 'style="max-height: 75vh"'
+    src: /img/execsvs-576w.jpg
+    srcset: |-
+      /img/execsvs-576w.jpg 576w,
+      /img/execsvs-768w.jpg 768w,
+      /img/execsvs-992w.jpg 992w,
+      /img/execsvs-1200w.jpg 1200w
+    img-attr: 'class="w-100 h-auto"'
   icon: handshake
   linkto: execsvc
   summary: |-
@@ -102,7 +119,12 @@
 - heading: Executive Networking Events
   navname: Events
   image:
-    file: /img/meetup.jpg
+    src: /img/meetup-576w.jpg
+    srcset: |-
+      /img/meetup-576w.jpg 576w,
+      /img/meetup-768w.jpg 768w,
+      /img/meetup-992w.jpg 992w,
+      /img/meetup-1200w.jpg 1200w
     img-attr: 'class="w-100 h-auto"' # landscape-media-fit"'
     #img-attr: 'class="landscape-media-fit"'
   linkto: execevent
@@ -112,5 +134,5 @@
     people at the executive level. We offer curated events which can connect
     you with those most able to help you, and we can help you build out your
     own event to help develop your business.
-  more: |-
-    not yet
+    <p/>
+    See upcoming events in our <a href="/events/">Cognitive Event Calendar</a>

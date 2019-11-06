@@ -7,7 +7,7 @@ meta:
     height: 668
 features:
   testimonials: true
-  portfolio: true
+  owlcarousel: true
   parallaxjs: true
 ---
 <div class="header-frame">
@@ -21,12 +21,6 @@ features:
     <source src="/vid/trees.1080.mp4" type="video/mp4" media="all" />
   </video>
 </div>
-<!-- // logo scroll
-Kognition, Intermodal Structures, Photopharmics, Goldman Sachs, Clarip
-
--->
-
-    <!-- y=" t6 w-100 mt7 pt4" -->
 <div class="header-overlay vh100">
   <div class="flex-l flex-m justify-center w-100 mt7">
     <picture class="">
@@ -41,69 +35,20 @@ Kognition, Intermodal Structures, Photopharmics, Goldman Sachs, Clarip
   <div class="arrow-down self-end"><a href="#jump"><i class="fas fa-angle-double-down"></i></a></div>
 </div>
 <a name="jump"></a>
-<div class=" pa0 ma0">
-  <div class="mv0 mv5-l ph1 ph7-x ph4-l tl">
-    {% include portfolio.html %}
-    <!--
-    <div class="flex-l justify-center-l">
-      <div class="flex items-start justify-center pv4 w-50-l ">
-        <div class="flex items-center justify-center ">
-          <div class="mh1 mh3-m mh3-l">
-            <i class="fas fa-brain color-primary" style="font-size: 8rem;"></i>
-          </div>
-          <div class="f4 light-tint self-center bw3 ph3 ml3" style="font-family: times">
-            <div class="f3 fw6">cog·ni·tive</div>
-            <div style="font-family: 'Roboto',arial,sans-serif; silver">/ˈkäɡnədiv/</div>
-            <div><span class="i">adjective;</span> The act or process of knowing.</div>
-          </div>
-        </div>
-      </div>
-      <div class="testimonials w-50-l">
-        <div class="flex justify-center">
-          <div class="color-underlay"></div>
-          <div class="quotemark mt1 mt3-l ml1 ml3-l fas fa-quote-left"></div>
-          <div class="slider w-100 pr1 pr2-m pr3-l mt1 mt3-m mt3-l mr3-m mr3-l">
-            <div class="mask">
-              <script language="Javascript">let tslides = []</script>
-              <ul>
-              {% assign nbr = 0 %}
-              {% for tmon in site.data.testimonials %}
-                {% assign nbr = nbr | plus: 1 %}
-                <script language="Javascript">tslides.push("#t-slide{{nbr}}")</script>
-                <li id="t-slide{{nbr}}" class="slide">
-                  <div class="slide-box">
-                    <div class="quote mt0 pt0 ph1 ph2-l pr1 pr2-l f3-ns f4-m f3-l">{{ tmon.quote }}</div>
-                    <div class="source flex items-end ml2 mr3 mb1">
-                      {% if tmon.headshot %}
-                      <img src="{{tmon.headshot}}" />
-                      {% endif %}
-                      <div class="ml1 ml2-m ml2-l">
-                        <div class="name">{{tmon.name}}</div>
-                        <div class="title f5">{{tmon.title}}</div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              {% endfor %}
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="tail mt1 mt2-m mt2-l"></div>
-      </div>
-    </div>
-    -->
-
-  </div>
+<div id="clients-logo" class="owl-carousel mt4 pt4 ba b--transparent">
+  {% for company in site.data.portfolio %}
+  <a href="{{company.site}} ba b--transparent">
+    <img src="{{ company.logo }}" alt="{{ company.name }}" style="height: 100px; width: auto; filter: grayscale(1)" class="mb0 ba b--transparent" />
+  </a>
+  {% endfor %}
 </div>
 {% comment %}
- % parallax is not working (grr) -- might be conflicting styles w/all the css %
+ % disabled -- parallax is not working (grr) -- might be conflicting styles w/all the css %
 <div class="flex-l items-center-l mv4">
   <div class="ph0 w-50-l parallax-window" data-parallax="scroll" data-image-src="/img/over.jpg" style="height: 600px" data-z-index="50000">
     &nbsp;
   </div>
 {% endcomment %}
-
 {% assign iter = 1 %}
 {% for topic in site.data.home-topics %}
 <a name="{{ topic.linkto }}"></a>
@@ -113,10 +58,19 @@ Kognition, Intermodal Structures, Photopharmics, Goldman Sachs, Clarip
 {% else %}
 {% assign reverse = "" %}
 {% endif %}
+{% if topic.insert %}
+{% if topic.increment %}
+{% assign iter = iter | plus: 1 %}
+{% endif %}
+{% include {{topic.insert}} %}
+{% else %}
 {% assign iter = iter | plus: 1 %}
 <div class="home-topic flex-l items-center-l mv4 {{reverse}}" id="topic-expand{{iter}}">
   <div class="ph0 w-50-l image overflow-hidden" {{ topic.image.frame-attr }}>
-    <img src="{{ topic.image.file }}" {{ topic.image.img-attr }}>
+    <img srcset="{{topic.image.srcset}}"
+         src="{{topic.image.src}}"
+         alt="{{topic.heading}}"
+         {{ topic.image.img-attr }} />
   </div>
   <div class="summary pb5-ns ph3 ph5-l w-50-l">
     <div class="tl">
@@ -136,7 +90,7 @@ Kognition, Intermodal Structures, Photopharmics, Goldman Sachs, Clarip
   </div>
   {% if topic.more %}
   <div class="detail hidden">
-    <div class="ph6-l ph5">
+    <div class="ph6-l ph4-m ph2-ns pb4">
       <div class="tc">
         <h1 class="f3 f2-l fw6 mb0 tc"><i class="fas fa-{{topic.icon }} ph3"></i> {{ topic.heading }}</h1>
       </div>
@@ -153,12 +107,9 @@ Kognition, Intermodal Structures, Photopharmics, Goldman Sachs, Clarip
   </div>
   {% endif %}
 </div>
+{% endif %}
 {% endfor %}
 <script language="Javascript">
-  function expandTopic(idkey) {
-    $(idkey).addClass("expanded")
-  }
-  function shrinkTopic(idkey) {
-    $(idkey).removeClass("expanded")
-  }
+  function expandTopic(idkey) { $(idkey).addClass("expanded") }
+  function shrinkTopic(idkey) { $(idkey).removeClass("expanded") }
 </script>

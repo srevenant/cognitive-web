@@ -1,0 +1,102 @@
+<nav class="navbar navbar-expand-lg navbar-light fixed-top flex items-start justify-content-start" id="navbar-top">
+  <button class="navbar-toggler mr-xs-4 mr-sm-4" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="nav-item nav-logo flex ml3 ml0-l self-start">
+    <a class="navbar-brand" href="/">
+      <picture>
+        <source type="image/webp" srcset="/img/cognitive-logo-w32.webp" />
+        <img src="/img/cognitive-logo-w32.png" alt="logo" />
+      </picture>
+    </a>
+    <a class="navbar-brand" href="/" style="font-family: 'Nanum Gothic'; font-weight: 700">
+      COGNITIVE
+    </a>
+  </div>
+  <div class="collapse navbar-collapse nav-menu align-items-start ml4-m ml4-l self-start" id="navbarSupportedContent">
+    <div class="navbar-nav">
+      <div class="nav-item nav-menu-col " id="nav-menu-col1">
+        <div class="nav-menu-header">
+        <a class="nav-link" href="#purpose">
+          Our Purpose
+        </a>
+        </div>
+        <div class="nav-menu-sub" aria-labelledby="navbarDropdown">
+          {% for topic in site.data.home-topics %}
+          {% if topic.navname %}
+          <a class="dropdown-item" href="#{{ topic.linkto }}">{{ topic.navname }}</a>
+          {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      <div class="nav-item nav-menu-col " id="nav-menu-col2">
+        <div class="nav-menu-header">
+          <a class="nav-link" href="/innovation/">
+            Innovation
+          </a>
+        </div>
+        <div class="nav-menu-sub" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/innovation/#Program">Program</a>
+          <a class="dropdown-item" href="/innovation/#Portfolio">Portfolio</a>
+          <a class="dropdown-item" href="/innovation/#Patrons">Patrons</a>
+          <a class="dropdown-item" href="/innovation/#EarlyStage">Early Stage</a>
+          <a class="dropdown-item" href="/innovation/#Scaling">Scaling</a>
+        </div>
+      </div>
+      <div class="nav-item nav-menu-col" id="nav-menu-col3">
+        <div class="nav-menu-header">
+        <a class="nav-link" href="/services/">
+          Services
+        </a>
+        </div>
+        <div class="nav-menu-sub" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/services/#Training">Learn More</a>
+          <a class="dropdown-item" href="/services/#Community">Community</a>
+          <a class="dropdown-item" href="/services/#Consulting">Consulting</a>
+          <a class="dropdown-item" href="/services/#Staffing">Staffing</a>
+        </div>
+      </div>
+      <div class="nav-item nav-menu-col mr-auto " id="nav-menu-col4">
+        <div class="nav-menu-header">
+        <a class="nav-link" href="/services/">
+          Connect
+        </a>
+        </div>
+        <div class="nav-menu-sub" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/events/">Upcoming Events</a>
+          <a class="dropdown-item" href="#modal-contact-us" data-toggle="modal">Contact Us</a>
+          <a class="dropdown-item" href="/team/">Our Team</a>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-row ml-auto items-start" style="margin-top: .5rem;">
+      <div class="nav-item mr-sm-3 d-none d-lg-block align-self-center">
+        <i class="fas fa-phone"></i>&nbsp;<span class="fw5">(801)&nbsp;555-5555</span>
+      </div>
+      <div class="nav-item mr-sm-3 d-none d-lg-block align-self-center">
+        <a class="myb myb-outline myb-small fw5" href="#modal-contact-us"  data-toggle="modal">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="modal fade" id="modal-limitedRelease" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+  <div class="modal-header">
+    Limited Release
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="container-fluid">
+    Sorry, this is currently in Limited Release, and not yet publicly available.
+    <p>
+    <a href="#modal-contact-us" data-toggle="modal">
+    <i class="fas fa-envelope fa-2x aos px-2" data-aos="flip-left"></i>
+        Please Contact us for more information!</a>
+    </div>
+  </div>
+  </div>
+</div>
+</div>

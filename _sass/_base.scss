@@ -71,6 +71,16 @@ div.header-overlay {
     text-decoration: none;
     padding-bottom: 1rem;
   }
+  .logo-slide {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 6rem;
+    /*
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 1rem;
+    */
+  }
 }
 
 .parallax-stripe {
@@ -140,7 +150,6 @@ h1, h2, h3, h4, h5 {
   padding-bottom: .5em;
   color: $primary-color;
 }
-
 .text-halo {
   text-shadow: 0 0 3px #000;
 }
